@@ -6,9 +6,9 @@ public class spawnObjects : MonoBehaviour {
 	// Expose variables
 	public bool onTimer = false;
 	public float Timer;
-	public GameObject objectToSpawn;
-	public GameObject spawner;
 	float TimerVal;
+
+	public GameObject objectToSpawn;
 
 	// create empty variables
 	GameObject objectClone;
@@ -18,11 +18,12 @@ public class spawnObjects : MonoBehaviour {
 		TimerVal = Timer;
 	}
 
-	void Spawn(){
-		Vector3 spawnerPosition = spawner.transform.position;
+	public void Spawn(){
+		Debug.Log ("spawn");
+		Vector3 spawnerPosition = this.transform.position;
+
 		objectClone = Instantiate(objectToSpawn, spawnerPosition, Quaternion.identity) as GameObject;
-        objectClone.GetComponent<Rigidbody>().AddForce(spawnerPosition * 50);
-		Timer = TimerVal;
+        objectClone.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
 	}
 	
 	// Update is called once per frame
@@ -33,6 +34,7 @@ public class spawnObjects : MonoBehaviour {
 			Timer -= Time.deltaTime;
 			if (Timer <= 0){
 				Spawn();
+				Timer = TimerVal;
 			}
 		}
 

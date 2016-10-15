@@ -4,7 +4,11 @@ using System.Collections;
 public class gravityControl : MonoBehaviour {
 
 	public Rigidbody rb;
-	public bool zeroGravityBool;
+	public bool zeroGravityBool = false;
+
+	public void toggleZeroGravity(){
+		// zeroGravityBool != zeroGravityBool;
+	}
 
 	void zeroGravity(){
 		if(zeroGravityBool == true){

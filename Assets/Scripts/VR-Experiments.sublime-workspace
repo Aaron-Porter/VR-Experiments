@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"zeroGra",
+				"zeroGravityBool"
+			],
+			[
 				"Des",
 				"Destroy\tObject.*(obj, t)"
 			],
@@ -29,6 +33,34 @@
 			{
 				"buffer_size": 841,
 				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gravityControl.cs",
+			"settings":
+			{
+				"buffer_size": 444,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/VR Experiments/",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "namespace UnityEngine.PostProcessing\n{\n    public sealed class BloomComponent : PostProcessingComponentRenderTexture<BloomModel>\n    {\n        static class Uniforms\n        {\n            internal static readonly int _AutoExposure        = Shader.PropertyToID(\"_AutoExposure\");\n            internal static readonly int _Threshold           = Shader.PropertyToID(\"_Threshold\");\n            internal static readonly int _Curve               = Shader.PropertyToID(\"_Curve\");\n            internal static readonly int _PrefilterOffs       = Shader.PropertyToID(\"_PrefilterOffs\");\n            internal static readonly int _SampleScale         = Shader.PropertyToID(\"_SampleScale\");\n            internal static readonly int _BaseTex             = Shader.PropertyToID(\"_BaseTex\");\n            internal static readonly int _BloomTex            = Shader.PropertyToID(\"_BloomTex\");\n            internal static readonly int _Bloom_Settings      = Shader.PropertyToID(\"_Bloom_Settings\");\n            internal static readonly int _Bloom_DirtTex       = Shader.PropertyToID(\"_Bloom_DirtTex\");\n            internal static readonly int _Bloom_DirtIntensity = Shader.PropertyToID(\"_Bloom_DirtIntensity\");\n        }\n\n        const int k_MaxPyramidBlurLevel = 16;\n        readonly RenderTexture[] m_BlurBuffer1 = new RenderTexture[k_MaxPyramidBlurLevel];\n        readonly RenderTexture[] m_BlurBuffer2 = new RenderTexture[k_MaxPyramidBlurLevel];\n\n        public override bool active\n        {\n            get\n            {\n                return model.enabled\n                       && model.settings.bloom.intensity > 0f;\n            }\n        }\n\n        public void Prepare(RenderTexture source, Material uberMaterial, Texture autoExposure)\n        {\n            var bloom = model.settings.bloom;\n            var lensDirt = model.settings.lensDirt;\n            var material = context.materialFactory.Get(\"Hidden/Post FX/Bloom\");\n            material.shaderKeywords = null;\n\n            // Apply auto exposure before the prefiltering pass if needed\n            if (autoExposure != null)\n            {\n                material.EnableKeyword(\"EYE_ADAPTATION\");\n                material.SetTexture(Uniforms._AutoExposure, autoExposure);\n            }\n\n            // Do bloom on a half-res buffer, full-res doesn't bring much and kills performances on\n            // fillrate limited platforms\n            var tw = context.width / 2;\n            var th = context.height / 2;\n\n            // Blur buffer format\n            // TODO: Extend the use of RGBM to the whole chain for mobile platforms\n            var useRGBM = Application.isMobilePlatform;\n            var rtFormat = useRGBM\n                ? RenderTextureFormat.Default\n                : RenderTextureFormat.DefaultHDR;\n\n            // Determine the iteration count\n            float logh = Mathf.Log(th, 2f) + bloom.radius - 8f;\n            int logh_i = (int)logh;\n            int iterations = Mathf.Clamp(logh_i, 1, k_MaxPyramidBlurLevel);\n\n            // Uupdate the shader properties\n            float lthresh = bloom.thresholdLinear;\n            material.SetFloat(Uniforms._Threshold, lthresh);\n\n            float knee = lthresh * bloom.softKnee + 1e-5f;\n            var curve = new Vector3(lthresh - knee, knee * 2f, 0.25f / knee);\n            material.SetVector(Uniforms._Curve, curve);\n\n            material.SetFloat(Uniforms._PrefilterOffs, bloom.antiFlicker ? -0.5f : 0f);\n\n            float sampleScale = 0.5f + logh - logh_i;\n            material.SetFloat(Uniforms._SampleScale, sampleScale);\n\n            // TODO: Probably can disable antiFlicker if TAA is enabled - need to do some testing\n            if (bloom.antiFlicker)\n                material.EnableKeyword(\"ANTI_FLICKER\");\n\n            // Prefilter pass\n            var prefiltered = context.renderTextureFactory.Get(tw, th, 0, rtFormat);\n            Graphics.Blit(source, prefiltered, material, 0);\n\n            // Construct a mip pyramid\n            var last = prefiltered;\n\n            for (int level = 0; level < iterations; level++)\n            {\n                m_BlurBuffer1[level] = context.renderTextureFactory.Get(\n                        last.width / 2, last.height / 2, 0, rtFormat\n                        );\n\n                int pass = (level == 0) ? 1 : 2;\n                Graphics.Blit(last, m_BlurBuffer1[level], material, pass);\n\n                last = m_BlurBuffer1[level];\n            }\n\n            // Upsample and combine loop\n            for (int level = iterations - 2; level >= 0; level--)\n            {\n                var baseTex = m_BlurBuffer1[level];\n                material.SetTexture(Uniforms._BaseTex, baseTex);\n\n                m_BlurBuffer2[level] = context.renderTextureFactory.Get(\n                        baseTex.width, baseTex.height, 0, rtFormat\n                        );\n\n                Graphics.Blit(last, m_BlurBuffer2[level], material, 3);\n                last = m_BlurBuffer2[level];\n            }\n\n            var bloomTex = last;\n\n            // Release the temporary buffers\n            for (int i = 0; i < k_MaxPyramidBlurLevel; i++)\n            {\n                if (m_BlurBuffer1[i] != null)\n                    context.renderTextureFactory.Release(m_BlurBuffer1[i]);\n\n                if (m_BlurBuffer2[i] != null && m_BlurBuffer2[i] != bloomTex)\n                    context.renderTextureFactory.Release(m_BlurBuffer2[i]);\n\n                m_BlurBuffer1[i] = null;\n                m_BlurBuffer2[i] = null;\n            }\n\n            context.renderTextureFactory.Release(prefiltered);\n\n            // Push everything to the uber material\n            uberMaterial.EnableKeyword(\"BLOOM\");\n            uberMaterial.SetTexture(Uniforms._BloomTex, bloomTex);\n            uberMaterial.SetVector(Uniforms._Bloom_Settings, new Vector2(sampleScale, bloom.intensity));\n\n            if (lensDirt.intensity > 0f && lensDirt.texture != null)\n            {\n                uberMaterial.SetTexture(Uniforms._Bloom_DirtTex, lensDirt.texture);\n                uberMaterial.SetFloat(Uniforms._Bloom_DirtIntensity, lensDirt.intensity);\n                uberMaterial.EnableKeyword(\"BLOOM_LENS_DIRT\");\n            }\n        }\n    }\n}\n",
+			"file": "/D/VR Experiments/Assets/Libraries/PostProcessing/Runtime/Components/BloomComponent.cs",
+			"file_size": 6174,
+			"file_write_time": 131201300410000000,
+			"settings":
+			{
+				"buffer_size": 6174,
 				"line_ending": "Unix"
 			}
 		}
@@ -61,7 +93,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 620.0
+		"width": 1224.0
 	},
 	"console":
 	{
@@ -82,6 +114,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/aaron/Desktop/RenderingCommandBuffers50b22/Assets/DeferredCustomLights/CustomLight.cs",
 		"/D/VR Experiments/Assets/Libraries/VRTK/Examples/Resources/Scripts/VRTK_ControllerEvents_ListenerExample.cs",
 		"/D/VR Experiments/",
 		"/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_InteractableObject.cs",
@@ -134,7 +167,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -150,8 +183,8 @@
 						"selection":
 						[
 							[
-								621,
-								621
+								618,
+								556
 							]
 						],
 						"settings":
@@ -159,10 +192,96 @@
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gravityControl.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/VR Experiments/",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/VR Experiments/Assets/Libraries/PostProcessing/Runtime/Components/BloomComponent.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4824,
+								4824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2262.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

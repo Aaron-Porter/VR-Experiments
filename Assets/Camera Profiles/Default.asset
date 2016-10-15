@@ -38,13 +38,13 @@ MonoBehaviour:
         motionBlending: 0.084
         renderQueue: 0
   ambientOcclusion:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       intensity: 0.82
       radius: 0.07
       sampleCount: 10
       downsampling: 1
-      ambientOnly: 0
+      ambientOnly: 1
       highPrecision: 0
   screenSpaceReflection:
     m_Enabled: 0

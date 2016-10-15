@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class spawnObjects : MonoBehaviour {
 
@@ -9,9 +10,9 @@ public class spawnObjects : MonoBehaviour {
 	float TimerVal;
 
 	public GameObject objectToSpawn;
-
-	// create empty variables
+	public int objectCountLimit;
 	GameObject objectClone;
+	List<GameObject> objects = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
@@ -19,11 +20,18 @@ public class spawnObjects : MonoBehaviour {
 	}
 
 	public void Spawn(){
-		Debug.Log ("spawn");
 		Vector3 spawnerPosition = this.transform.position;
 
 		objectClone = Instantiate(objectToSpawn, spawnerPosition, Quaternion.identity) as GameObject;
         objectClone.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+        objects.Add(objectClone);
+
+        if(objects.Count > objectCountLimit){
+        	GameObject gameObjectToRemove = objects[0];
+        	objects.Remove(gameObjectToRemove );
+        	Destroy(gameObjectToRemove);
+        }
+
 	}
 	
 	// Update is called once per frame

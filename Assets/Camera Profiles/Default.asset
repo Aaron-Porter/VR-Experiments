@@ -27,21 +27,21 @@ MonoBehaviour:
   antialiasing:
     m_Enabled: 0
     m_Settings:
-      method: 0
+      method: 1
       fxaaSettings:
         preset: 4
       taaSettings:
-        jitterSpread: 0.22
-        sampleCount: 49
-        sharpen: 0.2
+        jitterSpread: 0.519
+        sampleCount: 23
+        sharpen: 0.322
         stationaryBlending: 1
-        motionBlending: 0.084
-        renderQueue: 0
+        motionBlending: 0.072
+        renderQueue: 1
   ambientOcclusion:
     m_Enabled: 0
     m_Settings:
       intensity: 0.82
-      radius: 0.07
+      radius: 0.86
       sampleCount: 10
       downsampling: 1
       ambientOnly: 1
@@ -91,14 +91,14 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.42
-        threshold: 0.96
-        softKnee: 0.62
+        intensity: 0.53
+        threshold: 0.81
+        softKnee: 0.41
         radius: 6.45
         antiFlicker: 0
       lensDirt:
         texture: {fileID: 2800000, guid: 3884f7a2d04ffe8409ad9200b275896f, type: 3}
-        intensity: 0.56
+        intensity: 0
   colorGrading:
     m_Enabled: 1
     m_Settings:
@@ -275,10 +275,10 @@ MonoBehaviour:
   grain:
     m_Enabled: 0
     m_Settings:
-      mode: 1
-      intensity: 0.698
-      size: 2.209
-      luminanceContribution: 0.369
+      mode: 0
+      intensity: 0.467
+      size: 1.653
+      luminanceContribution: 0.313
   vignette:
     m_Enabled: 0
     m_Settings:

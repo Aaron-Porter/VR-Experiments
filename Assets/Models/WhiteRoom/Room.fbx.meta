@@ -11,24 +11,28 @@ ModelImporter:
     100006: Roof
     100008: //RootNode
     100010: Walls
+    100012: OuterWalls
     400000: BackWall
     400002: Floor
     400004: FrontWall
     400006: Roof
     400008: //RootNode
     400010: Walls
+    400012: OuterWalls
     2300000: BackWall
     2300002: Floor
     2300004: FrontWall
     2300006: Roof
     2300008: //RootNode
     2300010: Walls
+    2300012: OuterWalls
     3300000: BackWall
     3300002: Floor
     3300004: FrontWall
     3300006: Roof
     3300008: //RootNode
     3300010: Walls
+    3300012: OuterWalls
     4300000: OuterWalls
     4300002: BackWall
     4300004: Floor

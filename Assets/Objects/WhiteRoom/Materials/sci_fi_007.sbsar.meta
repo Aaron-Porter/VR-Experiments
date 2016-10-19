@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 55b4420186f236246bd203f8fee4433d
-timeCreated: 1476774578
+timeCreated: 1476852716
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -314,13 +314,13 @@ SubstanceImporter:
       material: {instanceID: 0}
       baseUID: 3125016046
     - shaderProp:
-        name: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 3125016050
-    - shaderProp:
         name: _OcclusionMap
       material: {instanceID: 0}
       baseUID: 3132718660
+    - shaderProp:
+        name: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 3125016050
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
@@ -491,7 +491,7 @@ SubstanceImporter:
           name: _BumpMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 40, y: 4}
+          scale: {x: 40, y: 40}
           offset: {x: 0, y: 0}
       - first:
           name: _DetailAlbedoMap
@@ -527,24 +527,24 @@ SubstanceImporter:
           name: _MetallicGlossMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 40, y: 4}
+          scale: {x: 40, y: 40}
           offset: {x: 0, y: 0}
       - first:
           name: _OcclusionMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 40, y: 4}
+          scale: {x: 40, y: 40}
           offset: {x: 0, y: 0}
       - first:
           name: _ParallaxMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 40, y: 4}
+          scale: {x: 40, y: 40}
           offset: {x: 0, y: 0}
       floats:
       - first:
           name: _BumpScale
-        second: 1
+        second: 1.5
       - first:
           name: _Cutoff
         second: 0.5
@@ -637,18 +637,24 @@ SubstanceImporter:
       material: {instanceID: 0}
       baseUID: 3125016046
     - shaderProp:
-        name: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 3125016050
-    - shaderProp:
         name: _OcclusionMap
       material: {instanceID: 0}
       baseUID: 3132718660
+    - shaderProp:
+        name: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 3125016050
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
       textureWidth: 512
       textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+    - serializedVersion: 2
+      buildTarget: Standalone
+      textureWidth: 2048
+      textureHeight: 2048
       textureFormat: 0
       loadingBehavior: 1
   deletedPrototypes: []

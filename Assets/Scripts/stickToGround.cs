@@ -6,7 +6,6 @@ public class stickToGround : MonoBehaviour {
 
 	GameObject head;
 	GameObject playspace;
-	List<Vector3> rayNormals = new List<Vector3>();
 	float headHeight;
 	RaycastHit hit;
 	Vector3 targetLocation;
@@ -21,25 +20,26 @@ public class stickToGround : MonoBehaviour {
 	void Update(){
 		headHeight = head.transform.localPosition.y;
 
-		// cast rays
-		for(int i = 0; i < 3; i++){
+		var rayPosition = head.transform.position;
+			rayPosition.y = rayPosition.y - 100;
 
-			var seperation = (float)0.5;
-			var offset = i * seperation;
-			var vectorPosition = head.transform.position;
-				vectorPosition.z = (vectorPosition.z - seperation) + offset;
-			var rayPosition = vectorPosition;
-
-			if (Physics.Raycast(rayPosition, Vector3.down, out hit)) {
+		if (Physics.Raycast(rayPosition, Vector3.up, out hit)) {
+			if(hit.collider.gameObject.name == "walkingPath"){
 				Debug.DrawLine (transform.position, hit.point, Color.cyan);
-				rayNormals.Add(hit.normal);
-			};
+				
+				var normal = hit.normal;
+					normal.y = -normal.y;
+					normal.x = -normal.x;
+					normal.z = -normal.z;
+				Debug.Log(normal);
+				rotatePlayspace(normal);
+			}
+		};
 
-		}
 
-		var averagedNormals = (rayNormals[0] + rayNormals[1] + rayNormals[2]) / 3;
 
-		rotatePlayspace(averagedNormals);
+
+
 	}
 
 	void rotatePlayspace(Vector3 normal){
@@ -49,8 +49,8 @@ public class stickToGround : MonoBehaviour {
 
      //    playspace.transform.rotation = finalRotation;
 
-	    var targetRotation = Quaternion.FromToRotation(playspace.transform.up, hit.normal) * playspace.transform.rotation;
-	    playspace.transform.rotation = Quaternion.Slerp(playspace.transform.rotation, targetRotation, Time.deltaTime * 1000);
+	    var targetRotation = Quaternion.FromToRotation(playspace.transform.up, normal) * playspace.transform.rotation;
+	    playspace.transform.rotation = targetRotation;
 	}
 
 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 55b4420186f236246bd203f8fee4433d
-timeCreated: 1476852716
+timeCreated: 1477115224
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -30,7 +30,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: luminosity
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0.551
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -51,7 +51,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: saturation
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0.496
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -93,28 +93,28 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: plate_number
       value:
-        scalar[0]: 8
+        scalar[0]: 9.42
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: sawtooth_density
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0.46
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: dirtiness
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: rivet
       value:
-        scalar[0]: 1
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -135,23 +135,23 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: back_metal_color
       value:
-        scalar[0]: 0.0862745
-        scalar[1]: 0.0862745
-        scalar[2]: 0.0862745
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: metal_color
       value:
-        scalar[0]: 0.282353
-        scalar[1]: 0.282353
-        scalar[2]: 0.266667
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: rivet_color
       value:
-        scalar[0]: 0.211765
-        scalar[1]: 0.215686
-        scalar[2]: 0.223529
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
         scalar[3]: 0
         texture: {instanceID: 0}
     materialInformation:

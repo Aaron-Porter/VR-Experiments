@@ -1,32 +1,37 @@
 fileFormatVersion: 2
-guid: 43a1d450420719b44974b371012b28c3
-timeCreated: 1477113808
+guid: ae26f916c0219f546b3fb513da7bcc3b
+timeCreated: 1477127582
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Core
-    100004: Floor
-    100006: Human_REF
-    100008: Walls
-    400000: //RootNode
-    400002: Core
-    400004: Floor
-    400006: Human_REF
-    400008: Walls
-    2300000: Core
-    2300002: Floor
-    2300004: Human_REF
-    2300006: Walls
-    3300000: Core
-    3300002: Floor
-    3300004: Human_REF
-    3300006: Walls
+    100000: Body
+    100002: //RootNode
+    100004: Core
+    100006: Details
+    100008: Human_REF
+    100010: Walls
+    400000: Body
+    400002: //RootNode
+    400004: Core
+    400006: Details
+    400008: Human_REF
+    400010: Walls
+    2300000: Body
+    2300002: Core
+    2300004: Details
+    2300006: Human_REF
+    2300008: Walls
+    3300000: Body
+    3300002: Core
+    3300004: Details
+    3300006: Human_REF
+    3300008: Walls
     4300000: Walls
-    4300002: Core
-    4300004: Human_REF
-    4300006: Floor
+    4300002: Details
+    4300004: Core
+    4300006: Body
+    4300008: Human_REF
     9500000: //RootNode
   materials:
     importMaterials: 1

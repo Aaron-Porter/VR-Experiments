@@ -1,44 +1,37 @@
 fileFormatVersion: 2
-guid: be4cdd0d1196eae42875583c4487ae32
-timeCreated: 1477125326
+guid: ae26f916c0219f546b3fb513da7bcc3b
+timeCreated: 1477127582
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: BODY_HIGH
-    100002: BODY_HIGH_MeshPart0
-    100004: BODY_HIGH_MeshPart1
-    100006: BODY_HIGH_MeshPart2
-    100008: //RootNode
-    100010: CORE
-    100012: Human_REF
-    100014: Walls
-    400000: BODY_HIGH
-    400002: BODY_HIGH_MeshPart0
-    400004: BODY_HIGH_MeshPart1
-    400006: BODY_HIGH_MeshPart2
-    400008: //RootNode
-    400010: CORE
-    400012: Human_REF
-    400014: Walls
-    2300000: BODY_HIGH_MeshPart0
-    2300002: BODY_HIGH_MeshPart1
-    2300004: BODY_HIGH_MeshPart2
-    2300006: CORE
-    2300008: Human_REF
-    2300010: Walls
-    3300000: BODY_HIGH_MeshPart0
-    3300002: BODY_HIGH_MeshPart1
-    3300004: BODY_HIGH_MeshPart2
-    3300006: CORE
-    3300008: Human_REF
-    3300010: Walls
+    100000: Body
+    100002: //RootNode
+    100004: Core
+    100006: Details
+    100008: Human_REF
+    100010: Walls
+    400000: Body
+    400002: //RootNode
+    400004: Core
+    400006: Details
+    400008: Human_REF
+    400010: Walls
+    2300000: Body
+    2300002: Core
+    2300004: Details
+    2300006: Human_REF
+    2300008: Walls
+    3300000: Body
+    3300002: Core
+    3300004: Details
+    3300006: Human_REF
+    3300008: Walls
     4300000: Walls
-    4300002: CORE
-    4300004: BODY_HIGH_MeshPart0
-    4300006: BODY_HIGH_MeshPart1
-    4300008: BODY_HIGH_MeshPart2
-    4300010: Human_REF
+    4300002: Details
+    4300004: Core
+    4300006: Body
+    4300008: Human_REF
     9500000: //RootNode
   materials:
     importMaterials: 1

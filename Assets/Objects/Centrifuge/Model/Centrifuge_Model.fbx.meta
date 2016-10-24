@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: db1ac07dd9fac424e84bbe3eef08e63e
-timeCreated: 1477276539
+guid: 10c22ade45cad624a80bb53c9a45a1f8
+timeCreated: 1477294799
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -8,40 +8,20 @@ ModelImporter:
     100000: //RootNode
     100002: Floor
     100004: Human_REF
-    100006: Ladder_1
-    100008: LIGHTS
-    100010: Sides
-    100012: Symmetry_1
-    100014: Tunnel_1
+    100006: Walls
     400000: //RootNode
     400002: Floor
     400004: Human_REF
-    400006: Ladder_1
-    400008: LIGHTS
-    400010: Sides
-    400012: Symmetry_1
-    400014: Tunnel_1
+    400006: Walls
     2300000: Floor
     2300002: Human_REF
-    2300004: Ladder_1
-    2300006: LIGHTS
-    2300008: Sides
-    2300010: Symmetry_1
-    2300012: Tunnel_1
+    2300004: Walls
     3300000: Floor
     3300002: Human_REF
-    3300004: Ladder_1
-    3300006: LIGHTS
-    3300008: Sides
-    3300010: Symmetry_1
-    3300012: Tunnel_1
-    4300000: LIGHTS
-    4300002: Sides
-    4300004: Tunnel_1
-    4300006: Ladder_1
-    4300008: Symmetry_1
-    4300010: Floor
-    4300012: Human_REF
+    3300004: Walls
+    4300000: Walls
+    4300002: Floor
+    4300004: Human_REF
     9500000: //RootNode
   materials:
     importMaterials: 1

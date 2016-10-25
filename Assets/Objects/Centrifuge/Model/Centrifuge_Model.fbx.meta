@@ -1,42 +1,39 @@
 fileFormatVersion: 2
-guid: 42bafd68857049046b0fbf7063f90bd2
-timeCreated: 1477364687
+guid: fb3d1a2f7529d9d47b9b0010a638afb0
+timeCreated: 1477366296
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Backwalls
-    100002: //RootNode
-    100004: Floor
-    100006: Human_REF
-    100008: Mesh
-    100010: Tunnel
+    100000: //RootNode
+    100002: Floor
+    100004: Human_REF
+    100006: Mesh_Details
+    100008: Mesh_Details_MeshPart0
+    100010: Mesh_Details_MeshPart1
     100012: walkingPath
-    400000: Backwalls
-    400002: //RootNode
-    400004: Floor
-    400006: Human_REF
-    400008: Mesh
-    400010: Tunnel
+    400000: //RootNode
+    400002: Floor
+    400004: Human_REF
+    400006: Mesh_Details
+    400008: Mesh_Details_MeshPart0
+    400010: Mesh_Details_MeshPart1
     400012: walkingPath
-    2300000: Backwalls
-    2300002: Floor
-    2300004: Human_REF
-    2300006: Mesh
-    2300008: Tunnel
-    2300010: walkingPath
-    3300000: Backwalls
-    3300002: Floor
-    3300004: Human_REF
-    3300006: Mesh
-    3300008: Tunnel
-    3300010: walkingPath
+    2300000: Floor
+    2300002: Human_REF
+    2300004: Mesh_Details_MeshPart0
+    2300006: Mesh_Details_MeshPart1
+    2300008: walkingPath
+    3300000: Floor
+    3300002: Human_REF
+    3300004: Mesh_Details_MeshPart0
+    3300006: Mesh_Details_MeshPart1
+    3300008: walkingPath
     4300000: Human_REF
-    4300002: Backwalls
-    4300004: Mesh
-    4300006: Floor
-    4300008: walkingPath
-    4300010: Tunnel
+    4300002: walkingPath
+    4300004: Floor
+    4300006: Mesh_Details_MeshPart0
+    4300008: Mesh_Details_MeshPart1
     9500000: //RootNode
   materials:
     importMaterials: 1

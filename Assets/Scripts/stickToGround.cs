@@ -18,31 +18,25 @@ public class stickToGround : MonoBehaviour {
 	}
 
 	void Update(){
-		// headHeight = head.transform.localPosition.y;
 
-		// var rayPosition = head.transform.position;
-		// 	// rayPosition.y = rayPosition.y - 100;
+		var rayPosition = head.transform.position;
 
-		// if (Physics.Raycast(rayPosition, -Vector3.up, out hit)) {
-		// 	if(hit.collider.gameObject.name == "walkingPath"){
-		// 		Debug.DrawLine (transform.position, hit.point, Color.cyan);
+		if (Physics.Raycast(rayPosition, -playspace.transform.up, out hit)) {
+			if(hit.collider.gameObject.name == "walkingPath"){
+				Debug.DrawLine (transform.position, hit.point, Color.cyan);
 				
-		// 		var normal = hit.normal;
-		// 		// 	normal.y = -normal.y;
-		// 		// 	normal.x = -normal.x;
-		// 		// 	normal.z = -normal.z;
-		// 		// Debug.Log(normal);
-		// 		rotatePlayspace(normal);
-		// 	}
-		// };
+				var normal = hit.normal;
+				// 	normal.y = -normal.y;
+				// 	normal.x = -normal.x;
+				// 	normal.z = -normal.z;
+				// Debug.Log(normal);
+				rotatePlayspace(normal);
+			}
+		};
 	}
 
 	public void rotatePlayspace(Vector3 normal){
 
-	    // Quaternion targetRotation = Quaternion.FromToRotation(playspace.transform.up, normal);
-     //    Quaternion finalRotation = Quaternion.RotateTowards(playspace.transform.rotation, targetRotation, Time.deltaTime);
-
-     //    playspace.transform.rotation = finalRotation;
 		playspace.transform.up = normal;
 	}
 

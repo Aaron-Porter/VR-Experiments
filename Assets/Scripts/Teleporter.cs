@@ -16,8 +16,10 @@ public class Teleporter : MonoBehaviour {
 	void Start(){
 		playspace = GameObject.Find("[CameraRig]");
 		lineRenderer = gameObject.AddComponent<LineRenderer>() as LineRenderer;
+		lineRenderer.enabled = false;
 		lineRenderer.SetColors(color, color);
 		lineRenderer.SetVertexCount(2);
+
 	}
 
 	void Update(){
@@ -32,8 +34,10 @@ public class Teleporter : MonoBehaviour {
 		rayVisible = value;
 		if(value == false){
 			lineRenderer.SetWidth(0,0);
+			lineRenderer.enabled = false;
 		}else{
 			lineRenderer.SetWidth(width,width);
+			lineRenderer.enabled = true;
 		}
 	}
 

@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000013322420834}
   - 95: {fileID: 95000013457159812}
   m_Layer: 0
-  m_Name: Centrifuge_Model
+  m_Name: Centrifuge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

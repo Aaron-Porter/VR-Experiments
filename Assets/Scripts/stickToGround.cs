@@ -37,6 +37,10 @@ public class stickToGround : MonoBehaviour {
 
 	public void rotatePlayspace(Vector3 normal){
 
+	    // Quaternion targetRotation = Quaternion.FromToRotation(playspace.transform.up, normal);
+     //    Quaternion finalRotation = Quaternion.RotateTowards(playspace.transform.rotation, targetRotation, 10 * Time.deltaTime);
+
+     //    playspace.transform.rotation = finalRotation;
 		playspace.transform.up = normal;
 	}
 

@@ -1,4 +1,4 @@
-﻿using Unityusing UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -38,19 +38,21 @@ public class stickToGround : MonoBehaviour {
 				Debug.DrawLine (transform.position, playspace.transform.right, Color.yellow);
 
 				Vector3 walkingHit = hit.point - transform.position;
-				var angle = Vector3.Angle(transform.up,walkingHit);
 
-				
+				var angle = Vector3.Angle(transform.up, walkingHit) - 90;
+			    Vector3 cross = Vector3.Cross(transform.up, walkingHit);
 
-				if(hit.transform.position.z > transform.position.z){
-					angle = angle - 90;
-					rotatePlayspace(angle);
-				}else{
-					angle = -(angle - 90);
-					rotatePlayspace(angle);
-				}
+			    if (cross.x < 0) angle = -angle;
+
+				rotatePlayspace(angle);
+
+				// if(hit.transform.position.z > transform.position.z){
+				// 	angle = angle - 90;
+				// 	// rotatePlayspace(angle);
+				// }
 				
 				Debug.Log(angle);
+				Debug.Log(cross.x);
 
 			}
 
@@ -89,5 +91,9 @@ public class stickToGround : MonoBehaviour {
 
 	    return signed_angle;
 	}
+	public static float CalculateAngle(Vector3 from, Vector3 to)
+    {
+        return Quaternion.FromToRotation(Vector3.up, to - from).eulerAngles.z;
+    }
 }
 

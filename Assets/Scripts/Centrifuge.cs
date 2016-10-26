@@ -14,10 +14,10 @@ public class Centrifuge : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate() {
+    void Update() {
 
         Quaternion deltaRotation = Quaternion.Euler(eulerAngleVelocity * Time.deltaTime); // degrees a second - RPS
-        rb.MoveRotation(rb.rotation * deltaRotation); // add force to rotate
+        this.transform.Rotate (360,0,0);
 
         //or apply gravity to all game objects with rigidbody
         foreach (GameObject o in UnityEngine.Object.FindObjectsOfType<GameObject>()) {

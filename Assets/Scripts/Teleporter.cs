@@ -63,7 +63,7 @@ public class Teleporter : MonoBehaviour {
     }
 
     public void teleport(){
-    	playspace.GetComponent<stickToGround>().rotatePlayspace(teleportPoint.normal);
+    	playspace.GetComponent<stickToGround>().teleportOrientPlayspace(teleportPoint.normal);
     	playspace.transform.position = teleportPoint.point;
 
     }

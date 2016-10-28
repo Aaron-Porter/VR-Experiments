@@ -43,6 +43,7 @@ public class gravityAttractor : MonoBehaviour {
 			// calculate direction from target to me
 			Vector3 forceDirection = transform.position - collider.transform.position;
 
+
 			// apply force on target towards me
 			collider.GetComponent<Rigidbody>().AddForce(forceDirection.normalized * pullForce * Time.fixedDeltaTime);
 			}

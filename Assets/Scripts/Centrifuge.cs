@@ -32,7 +32,7 @@ public class Centrifuge : MonoBehaviour {
                 var force = (this.transform.position - o.transform.position).normalized * gravitationalPull * o.GetComponent<Rigidbody>().mass;
                     force.x = 0;
                     // force.z = 0;
-                Debug.Log(force);
+                // Debug.Log(force);
                 o.GetComponent<Rigidbody>().AddForce(force, ForceMode.Acceleration);
 
             }

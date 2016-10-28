@@ -43,19 +43,17 @@ public class Teleporter : MonoBehaviour {
 
 	public void Ray () {
 
-		var origin = transform.position;
-		var direction = transform.TransformDirection(Vector3.forward);
-		var endPoint = origin + direction * 1000000;
+		var rayOrigin = transform.position;
+			rayOrigin = rayOrigin + (transform.TransformDirection(Vector3.forward) * 30);
+		var rayDirection = -transform.TransformDirection(Vector3.forward);
         RaycastHit hit;
 
-        lineRenderer.SetPosition(0, origin);
+        lineRenderer.SetPosition(0, transform.position);
 
-        if (Physics.Raycast(origin, direction, out hit) && hit.collider.gameObject.name == "walkingPath"){
+        if (Physics.Raycast(rayOrigin, rayDirection, out hit) && hit.collider.gameObject.name == "walkingPath"){
         	
-        	endPoint = hit.point;
-
         	// Debug.DrawRay(origin, direction, Color.green);
-			lineRenderer.SetPosition(1, endPoint);
+			lineRenderer.SetPosition(1, hit.point);
 			teleportPoint = hit;
 
         }
@@ -63,7 +61,7 @@ public class Teleporter : MonoBehaviour {
     }
 
     public void teleport(){
-    	playspace.GetComponent<stickToGround>().teleportOrientPlayspace(teleportPoint.normal);
+    	playspace.GetComponent<stickToGround>().rotatePlayspace(teleportPoint.normal);
     	playspace.transform.position = teleportPoint.point;
 
     }

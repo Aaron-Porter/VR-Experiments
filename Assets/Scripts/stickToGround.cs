@@ -6,7 +6,6 @@ public class stickToGround : MonoBehaviour {
 
 	GameObject head;
 	GameObject playspace;
-	GameObject playspaceFloor;
 	float headHeight;
 	RaycastHit hit;
 	Vector3 targetLocation;
@@ -16,37 +15,30 @@ public class stickToGround : MonoBehaviour {
 	void Awake(){
 		head = GameObject.Find("Camera (eye)");
 		playspace = GameObject.Find("[CameraRig]");
-		playspaceFloor = GameObject.Find("playspaceFloor");
 	}
 
-	void FixedUpdate(){
+	void Update(){
+
+
 
 		var rayPosition = head.transform.position;
-		var playspaceCenter = playspace.transform.position;
+			rayPosition = rayPosition + (-playspace.transform.up * 30);
 
 		RaycastHit[] hits;
-        hits = Physics.RaycastAll(rayPosition, -playspace.transform.up, 100.0F);
+        hits = Physics.RaycastAll(rayPosition, playspace.transform.up, 100.0F);
 
         for (int i = 0; i < hits.Length; i++) {
             RaycastHit hit = hits[i];
 
 			if(hit.collider.gameObject.name == "walkingPath"){
+				Debug.Log("true");
 
-				Vector3 walkingHit = hit.point - transform.position;
+				Debug.DrawLine(rayPosition, hit.point, Color.cyan);
+				
+				var normal = hit.normal;
 
-				Debug.DrawLine (rayPosition, hit.point, Color.cyan);
-				Debug.DrawLine (transform.position, hit.point, Color.red);
-
-
-				var angle = Vector3.Angle(transform.up, walkingHit) ;
-			    Vector3 cross = Vector3.Cross(transform.up, walkingHit);
-			    int sign = Vector3.Cross(transform.up, walkingHit).x < 0 ? -1 : 1;
-			    angle = (angle * sign) - (90 * sign);
-
-			    // Debug.Log("Sign: " + sign);
-			    // Debug.Log("Angle: " + angle);
-
-				rotatePlayspace(angle);
+				// Debug.Log(normal);
+				rotatePlayspace(normal);
 
 
 			}
@@ -55,13 +47,15 @@ public class stickToGround : MonoBehaviour {
 
 	}
 
-	public void teleportOrientPlayspace(Vector3 normal){
+	public void rotatePlayspace(Vector3 normal){
+		normal.y = -normal.y;
+		normal.x = -normal.x;
+		normal.z = -normal.z;
+
 		playspace.transform.up = normal;
+		// var targetRotation = Quaternion.FromToRotation(playspace.transform.up, normal) * playspace.transform.rotation;
+	 //    playspace.transform.rotation = targetRotation;
 	}
 
-	public void rotatePlayspace(float rotation){
-		 playspace.transform.Rotate(transform.right, rotation);
-	}
 
 }
-

@@ -7,18 +7,23 @@ public class Teleporter : MonoBehaviour {
 
 	VRTK_ControllerEvents controllerEvents;
 	LineRenderer lineRenderer;
-	public Color color;
+	public Color disabledColor;
+	public Color activeColor;
 	public float width;
 	public bool rayVisible;
 	RaycastHit teleportPoint;
 	GameObject playspace;
+	GameObject head;
 
 	void Start(){
 		playspace = GameObject.Find("[CameraRig]");
+		head = GameObject.Find("Camera (eye)");
 		lineRenderer = gameObject.AddComponent<LineRenderer>() as LineRenderer;
+		lineRenderer.material = new Material (Shader.Find("Particles/Additive"));
 		lineRenderer.enabled = false;
-		lineRenderer.SetColors(color, color);
 		lineRenderer.SetVertexCount(2);
+		lineRenderer.SetColors(disabledColor, disabledColor);
+
 
 	}
 
@@ -49,11 +54,13 @@ public class Teleporter : MonoBehaviour {
         RaycastHit hit;
 
         lineRenderer.SetPosition(0, transform.position);
+        lineRenderer.SetPosition(1, transform.position + (transform.TransformDirection(Vector3.forward) * 30));
+        lineRenderer.SetColors(disabledColor, disabledColor);
 
         if (Physics.Raycast(rayOrigin, rayDirection, out hit) && hit.collider.gameObject.name == "walkingPath"){
         	
         	// Debug.DrawRay(origin, direction, Color.green);
-			lineRenderer.SetPosition(1, hit.point);
+        	lineRenderer.SetColors(activeColor, activeColor);
 			teleportPoint = hit;
 
         }
@@ -61,9 +68,22 @@ public class Teleporter : MonoBehaviour {
     }
 
     public void teleport(){
+
+    	// re-orient
     	playspace.GetComponent<stickToGround>().rotatePlayspace(teleportPoint.normal);
+
+    	// re-position
+    	// var teleportPosition = teleportPoint.point;
+    	// teleportPosition.x = (teleportPosition.x - (head.transform.position.x - playspace.transform.position.x));
+     	// teleportPosition.z = (teleportPosition.z - (head.transform.position.z - playspace.transform.position.z));
+
+     	var offset = head.transform.localPosition;
+     		offset.y = 0;
     	playspace.transform.position = teleportPoint.point;
+    	playspace.transform.Translate(-offset, Space.Self);
+
 
     }
+
 
 }

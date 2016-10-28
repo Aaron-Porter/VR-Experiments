@@ -31,7 +31,6 @@ public class stickToGround : MonoBehaviour {
             RaycastHit hit = hits[i];
 
 			if(hit.collider.gameObject.name == "walkingPath"){
-				Debug.Log("true");
 
 				Debug.DrawLine(rayPosition, hit.point, Color.cyan);
 				

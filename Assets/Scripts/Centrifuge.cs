@@ -9,10 +9,19 @@ public class Centrifuge : MonoBehaviour {
     public List<GameObject> objects;
     public float gravitationalPull;
     bool onGround;
+    Mesh mesh;
+    Vector3[] vertices;
+    Vector2[] uvs;
+    Bounds bounds;
  
 
     void Start() {
         rb = GetComponent<Rigidbody>();
+        mesh = GetComponent<MeshFilter>().mesh;
+        vertices = mesh.vertices;
+        uvs = new Vector2[vertices.Length];
+        bounds = mesh.bounds;
+        Debug.Log(bounds);
     }
 
     void FixedUpdate() {
@@ -29,10 +38,19 @@ public class Centrifuge : MonoBehaviour {
             if(o.GetComponent<Rigidbody>()){
                 Debug.DrawLine (this.transform.position, this.transform.position - o.transform.position, Color.cyan);
 
-                var force = (this.transform.position - o.transform.position).normalized * gravitationalPull * o.GetComponent<Rigidbody>().mass;
+                var objVector = (this.transform.position - o.transform.position);
+                var objDist = objVector.magnitude;
+                var gravDist = (bounds.extents.x * transform.localScale.x);
+                var powerOfGravity = gravitationalPull * (objDist / gravDist);
+
+                var force = objVector.normalized * powerOfGravity * o.GetComponent<Rigidbody>().mass;
                     force.x = 0;
-                    // force.z = 0;
+
+                // Debug.Log("objDist " + objDist);
+                // Debug.Log("gravDist " + gravDist);
+                // Debug.Log(powerOfGravity);
                 // Debug.Log(force);
+
                 o.GetComponent<Rigidbody>().AddForce(force, ForceMode.Acceleration);
 
             }

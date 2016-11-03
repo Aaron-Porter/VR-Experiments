@@ -71,98 +71,7 @@
 			"file": "Centrifuge.cs",
 			"settings":
 			{
-				"buffer_size": 1330,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Gravity.cs",
-			"settings":
-			{
-				"buffer_size": 895,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "using UnityEngine;\nusing System.Collections;\n\npublic class GravityAttractor : MonoBehaviour {\n\t\n\tpublic float gravity = -9.8f;\n\t\n\t\n\tpublic void Attract(Rigidbody body) {\n\t\tVector3 gravityUp = (body.position - transform.position).normalized;\n\t\tVector3 localUp = body.transform.up;\n\t\t\n\t\t// Apply downwards gravity to body\n\t\tbody.AddForce(gravityUp * gravity);\n\t\t// Allign bodies up axis with the centre of planet\n\t\tbody.rotation = Quaternion.FromToRotation(localUp,gravityUp) * body.rotation;\n\t}  \n}\n",
-			"file": "/C/Users/aaron/AppData/Local/Temp/Temp1_Spherical-Gravity-master.zip/Spherical-Gravity-master/GravityAttractor.cs",
-			"file_size": 501,
-			"file_write_time": 131220855766994122,
-			"settings":
-			{
-				"buffer_size": 498,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/aaron/Downloads/world-gravity/Assets/scripts/Player/PhysicsCharacterMotor.cs",
-			"settings":
-			{
-				"buffer_size": 4239,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "gravityAttractor.cs",
-			"settings":
-			{
-				"buffer_size": 1274,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/VR Experiments/Assets/Libraries/Vive-Teleporter/Scripts/ParabolicPointer.cs",
-			"settings":
-			{
-				"buffer_size": 11611,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_BasicTeleport.cs",
-			"settings":
-			{
-				"buffer_size": 11463,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "stickToGround.cs",
-			"settings":
-			{
-				"buffer_size": 1204,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Teleporter.cs",
-			"settings":
-			{
-				"buffer_size": 2429,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Github Repos/VolumetricLighting/Assets/VolumetricFog/Scripts/FogLight.cs",
-			"settings":
-			{
-				"buffer_size": 1208,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Github Repos/VolumetricLighting/Assets/LightManager/Scripts/LightManagerFogLights.cs",
-			"settings":
-			{
-				"buffer_size": 65,
+				"buffer_size": 1955,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -284,18 +193,26 @@
 	},
 	"file_history":
 	[
+		"/D/VR Experiments/Assets/Scripts/Teleporter.cs",
+		"/D/VR Experiments/Assets/Scripts/stickToGround.cs",
+		"/D/VR Experiments/Assets/Scripts/Gravity.cs",
+		"/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_BasicTeleport.cs",
+		"/D/VR Experiments/Assets/Libraries/Vive-Teleporter/Scripts/ParabolicPointer.cs",
+		"/D/VR Experiments/Assets/Scripts/gravityAttractor.cs",
+		"/C/Users/aaron/Downloads/world-gravity/Assets/scripts/Player/PhysicsCharacterMotor.cs",
+		"/C/Users/aaron/AppData/Local/Temp/Temp1_Spherical-Gravity-master.zip/Spherical-Gravity-master/GravityAttractor.cs",
+		"/D/Github Repos/VolumetricLighting/Assets/LightManager/Scripts/LightManagerFogLights.cs",
+		"/D/Github Repos/VolumetricLighting/Assets/VolumetricFog/Scripts/FogLight.cs",
 		"/D/VR Experiments/",
 		"/C/Users/aaron/Downloads/world-gravity/Assets/scripts/Player/ThirdPersonPlayerAnimation.cs",
 		"/D/VR Experiments/Assets/Scripts/teleport.cs.meta",
 		"/D/VR Experiments/Assets/Scripts/teleport.cs",
 		"/D/VR Experiments/Assets/Libraries/VRTK/Scripts/Helper/UnityEvents/VRTK_ControllerEvents_UnityEvents.cs",
-		"/D/VR Experiments/Assets/Scripts/stickToGround.cs",
 		"/D/VR Experiments/Assets/Centrifuge.cs",
 		"/D/VR Experiments/Assets/Scripts/Centrifuge.cs",
 		"/D/VR Experiments/Assets/Libraries/PostProcessing/Runtime/Components/BloomComponent.cs",
 		"/D/VR Experiments/Assets/Scripts/audioOnCollision.cs",
 		"/D/VR Experiments/Assets/Scripts/TorqueStabilizer.cs",
-		"/D/VR Experiments/Assets/Scripts/gravityAttractor.cs",
 		"/D/VR Experiments/Assets/Libraries/VRTK/Examples/Resources/Scripts/Sword.cs",
 		"/D/VR Experiments/Assets/Scripts/orbShooter.cs",
 		"/D/VR Experiments/Assets/Libraries/SteamVR/Scripts/SteamVR_GameView.cs",
@@ -308,7 +225,6 @@
 		"/C/Users/aaron/Desktop/RenderingCommandBuffers50b22/Assets/DeferredCustomLights/CustomLight.cs",
 		"/D/VR Experiments/Assets/Libraries/VRTK/Examples/Resources/Scripts/VRTK_ControllerEvents_ListenerExample.cs",
 		"/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_InteractableObject.cs",
-		"/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_BasicTeleport.cs",
 		"/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_ControllerEvents.cs",
 		"/D/VR Experiments/Assets/Libraries/BrokenVector/PersistentComponents/Editor/PersistencyData.cs",
 		"/D/VR Experiments/Assets/spawnObjects.cs",
@@ -331,6 +247,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bounds",
 			"eyeCamera",
 			"head",
 			"OnTeleported",
@@ -411,7 +328,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -420,15 +337,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1330,
+						"buffer_size": 1955,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1045,
-								1082
+								268,
+								268
 							]
 						],
 						"settings":
@@ -436,296 +353,6 @@
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 638.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Gravity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								459,
-								459
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 116.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/aaron/AppData/Local/Temp/Temp1_Spherical-Gravity-master.zip/Spherical-Gravity-master/GravityAttractor.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 498,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								357,
-								322
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/aaron/Downloads/world-gravity/Assets/scripts/Player/PhysicsCharacterMotor.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4239,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2895,
-								2903
-							],
-							[
-								2972,
-								2980
-							],
-							[
-								3645,
-								3653
-							],
-							[
-								3862,
-								3854
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1566.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "gravityAttractor.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1274,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1110,
-								1110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/D/VR Experiments/Assets/Libraries/Vive-Teleporter/Scripts/ParabolicPointer.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11611,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1650,
-								1664
-							],
-							[
-								6569,
-								6583
-							],
-							[
-								7012,
-								7026
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 13.0,
-						"translation.y": 7042.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_BasicTeleport.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11463,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3759,
-								3768
-							],
-							[
-								6261,
-								6270
-							],
-							[
-								9226,
-								9235
-							],
-							[
-								9411,
-								9420
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 211.0,
-						"translation.y": 4178.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "stickToGround.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1204,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								709,
-								709
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Teleporter.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2429,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2397,
-								2397
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1472.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/D/Github Repos/VolumetricLighting/Assets/VolumetricFog/Scripts/FogLight.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1208,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1095,
-								1095
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -735,35 +362,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "/D/Github Repos/VolumetricLighting/Assets/LightManager/Scripts/LightManagerFogLights.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 65,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 1,
 					"semi_transient": false,
 					"settings":
 					{
@@ -789,11 +388,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 2,
 					"file": "/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_HeightAdjustTeleport.cs",
 					"semi_transient": false,
 					"settings":
@@ -819,11 +418,11 @@
 						"translation.y": 772.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 3,
 					"file": "/D/VR Experiments/Assets/Libraries/VRTK/Scripts/VRTK_TeleportDisableOnHeadsetCollision.cs",
 					"semi_transient": false,
 					"settings":
@@ -849,11 +448,11 @@
 						"translation.y": 116.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 4,
 					"file": "/D/VR Experiments/Assets/Libraries/VRTK/Examples/Resources/Scripts/VRTK_ControllerEvents_ListenerExample.cs",
 					"semi_transient": false,
 					"settings":
@@ -879,11 +478,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 5,
 					"file": "/D/VR Experiments/Assets/Libraries/SteamVR/Scripts/SteamVR_TrackedObject.cs",
 					"semi_transient": false,
 					"settings":
@@ -908,11 +507,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 6,
 					"file": "orbShooter.cs",
 					"semi_transient": false,
 					"settings":
@@ -937,11 +536,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 7,
 					"file": "helmetPositonRotation.cs",
 					"semi_transient": false,
 					"settings":
@@ -966,7 +565,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1048,8 +647,8 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 225.0,
+	"side_bar_visible": true,
+	"side_bar_width": 440.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

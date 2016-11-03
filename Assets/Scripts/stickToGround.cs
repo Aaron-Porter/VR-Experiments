@@ -17,7 +17,7 @@ public class stickToGround : MonoBehaviour {
 		playspace = GameObject.Find("[CameraRig]");
 	}
 
-	void Update(){
+	void FixedUpdate(){
 
 
 

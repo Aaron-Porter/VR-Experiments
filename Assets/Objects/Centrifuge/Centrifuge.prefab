@@ -344,6 +344,7 @@ GameObject:
   - 23: {fileID: 23000012961682250}
   - 114: {fileID: 114000013121893782}
   - 64: {fileID: 64000013749530906}
+  - 114: {fileID: 114000012602742734}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -5825,6 +5826,20 @@ MonoBehaviour:
   eulerAngleVelocity: {x: 0, y: 0, z: 0}
   objects: []
   gravitationalPull: -9.81
+--- !u!114 &114000012602742734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010963563694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a2f76f126e4f148a2d7e5c0c24d997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 0}
+  teleportationMaterial: {fileID: -696953153, guid: 574c2e181a06a634cada8e6254a84985,
+    type: 3}
 --- !u!114 &114000013121893782
 MonoBehaviour:
   m_ObjectHideFlags: 1

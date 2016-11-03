@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5a3561b903c814743be708d7e6c840ee
-timeCreated: 1477644957
+timeCreated: 1478139421
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -37,7 +37,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Scratches
       value:
-        scalar[0]: 0.75
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -202,6 +202,16 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     - name: Centrifuge_Floor_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_basecolor (Clone) (Clone) (Clone) (Clone)
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_metallic (Clone) (Clone) (Clone) (Clone)
       alphaSource: 7
       filterMode: 1
       aniso: 1

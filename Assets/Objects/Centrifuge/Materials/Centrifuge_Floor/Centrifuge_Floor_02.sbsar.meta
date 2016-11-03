@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 574c2e181a06a634cada8e6254a84985
-timeCreated: 1478134307
+timeCreated: 1478141851
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -44,9 +44,9 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Tile_Color
       value:
-        scalar[0]: 0.45317906
-        scalar[1]: 0.81449103
-        scalar[2]: 0.9338235
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
         scalar[3]: 1
         texture: {instanceID: 0}
     - name: Inner_Grid_Scale
@@ -189,7 +189,7 @@ SubstanceImporter:
         second: {r: 1, g: 1, b: 1, a: 1}
       - first:
           name: _EmissionColor
-        second: {r: 0.043588217, g: 0.20491485, b: 0.247, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
     textureParameters:
     - name: Centrifuge_Floor_Teleportation_basecolor
       alphaSource: 6

@@ -16,6 +16,7 @@ public class Teleporter : MonoBehaviour {
 	GameObject playspace;
 	GameObject head;
 	GameObject floor;
+	GameObject projector;
 	bool readyToTeleport;
 
 	Material defaultFloorMaterial;
@@ -33,6 +34,7 @@ public class Teleporter : MonoBehaviour {
 	void Start(){
 		// get objects
 		playspace = GameObject.Find("[CameraRig]");
+		projector = GameObject.Find("teleporterProjector");
 		floor = GameObject.Find("Floor");
 		head = GameObject.Find("Camera (eye)");
 
@@ -85,6 +87,7 @@ public class Teleporter : MonoBehaviour {
         lineRenderer.SetColors(disabledColor, disabledColor);
         readyToTeleport = false;
 
+
         // cast physics ray to detect floor
         if (Physics.Raycast(rayOrigin, rayDirection, out hit) && hit.collider.gameObject.name == "Floor"){
         	readyToTeleport = true;
@@ -92,6 +95,10 @@ public class Teleporter : MonoBehaviour {
         	// Debug.DrawRay(origin, direction, Color.green);
         	lineRenderer.SetColors(activeColor, activeColor);
 			teleportPoint = hit;
+
+			// position teleporter projector
+			projector.transform.position = hit.point + (hit.normal * 5);
+			projector.transform.LookAt(hit.point);
 
         }
 

@@ -96,6 +96,15 @@ ModelImporter:
     100176: Window_2
     100178: Windows
     100180: Windows_2
+    100182: Core
+    100184: Core_Lights
+    100186: Human_REF
+    100188: Ladder
+    100190: Wall_Left
+    100192: Wall_Left_MeshPart0
+    100194: Wall_Left_MeshPart1
+    100196: Wall_Left_MeshPart2
+    100198: Wall_Right
     400000: 1_2_DIV
     400002: 1_2_DIV_2
     400004: 2_3_DIV
@@ -187,6 +196,15 @@ ModelImporter:
     400176: Window_2
     400178: Windows
     400180: Windows_2
+    400182: Core
+    400184: Core_Lights
+    400186: Human_REF
+    400188: Ladder
+    400190: Wall_Left
+    400192: Wall_Left_MeshPart0
+    400194: Wall_Left_MeshPart1
+    400196: Wall_Left_MeshPart2
+    400198: Wall_Right
     2300000: 1_2_DIV
     2300002: 1_2_DIV_2
     2300004: 2_3_DIV
@@ -269,6 +287,14 @@ ModelImporter:
     2300158: Window_2
     2300160: Windows
     2300162: Windows_2
+    2300164: Core
+    2300166: Core_Lights
+    2300168: Human_REF
+    2300170: Ladder
+    2300172: Wall_Left_MeshPart0
+    2300174: Wall_Left_MeshPart1
+    2300176: Wall_Left_MeshPart2
+    2300178: Wall_Right
     3300000: 1_2_DIV
     3300002: 1_2_DIV_2
     3300004: 2_3_DIV
@@ -351,6 +377,14 @@ ModelImporter:
     3300158: Window_2
     3300160: Windows
     3300162: Windows_2
+    3300164: Core
+    3300166: Core_Lights
+    3300168: Human_REF
+    3300170: Ladder
+    3300172: Wall_Left_MeshPart0
+    3300174: Wall_Left_MeshPart1
+    3300176: Wall_Left_MeshPart2
+    3300178: Wall_Right
     4300000: Centrifuge
     4300002: Core_Base_Right
     4300004: Dual_Light
@@ -433,6 +467,14 @@ ModelImporter:
     4300158: Core_Inner
     4300160: walkingPath
     4300162: Floor
+    4300164: Core
+    4300166: Wall_Left_MeshPart0
+    4300168: Wall_Left_MeshPart1
+    4300170: Wall_Left_MeshPart2
+    4300172: Wall_Right
+    4300174: Core_Lights
+    4300176: Ladder
+    4300178: Human_REF
   materials:
     importMaterials: 1
     materialName: 0

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Teleporter Projection
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: f29ef05121a15af4d9b842c3413a11c5, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -28,6 +28,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _DetailBump
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _DetailMask
       second:
         m_Texture: {fileID: 0}
@@ -40,13 +46,37 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _DetailTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _FalloffTex
+      second:
+        m_Texture: {fileID: 2800000, guid: b1d7fee26e54cc3498f6267f072a45b9, type: 3}
+        m_Scale: {x: 0, y: 0}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainBump
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Mask
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -69,10 +99,19 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ShadowTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 6877c0ec13ff15244b49482fae5534dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
       second: 1
+    - first:
+        name: _ColorMask
+      second: 15
     - first:
         name: _Cutoff
       second: 0.5
@@ -82,6 +121,9 @@ Material:
     - first:
         name: _DstBlend
       second: 0
+    - first:
+        name: _Focus
+      second: -100
     - first:
         name: _GlossMapScale
       second: 1
@@ -104,6 +146,9 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _Shininess
+      second: 0.2
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -113,7 +158,28 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _Stencil
+      second: 0
+    - first:
+        name: _StencilComp
+      second: 8
+    - first:
+        name: _StencilOp
+      second: 0
+    - first:
+        name: _StencilReadMask
+      second: 255
+    - first:
+        name: _StencilWriteMask
+      second: 255
+    - first:
+        name: _Strength
+      second: 0.2
+    - first:
         name: _UVSec
+      second: 0
+    - first:
+        name: _UseUIAlphaClip
       second: 0
     - first:
         name: _ZWrite
@@ -121,7 +187,10 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 1, g: 0, b: 0, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Specular
+      second: {r: 0, g: 0, b: 0, a: 0}

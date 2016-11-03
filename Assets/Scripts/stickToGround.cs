@@ -19,8 +19,6 @@ public class stickToGround : MonoBehaviour {
 
 	void FixedUpdate(){
 
-
-
 		var rayPosition = head.transform.position;
 			rayPosition = rayPosition + (-playspace.transform.up * 30);
 

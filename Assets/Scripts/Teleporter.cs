@@ -97,7 +97,7 @@ public class Teleporter : MonoBehaviour {
 			teleportPoint = hit;
 
 			// position teleporter projector
-			projector.transform.position = hit.point + (hit.normal * 5);
+			projector.transform.position = hit.point + (hit.normal * 3);
 			projector.transform.LookAt(hit.point);
 
         }
@@ -124,10 +124,12 @@ public class Teleporter : MonoBehaviour {
 
     	if(State == "default" || State == "doneTeleporting"){
 
+    		projector.GetComponent<Projector>().enabled = false;
     		floor.GetComponent<MeshRenderer>().material = floor.GetComponent<teleportFloor>().defaultMaterial;
 
     	}else if(State == "beforeTeleporting"){
 
+    		projector.GetComponent<Projector>().enabled = true;
     		floor.GetComponent<MeshRenderer>().material = floor.GetComponent<teleportFloor>().teleportationMaterial;
 
     	}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5a3561b903c814743be708d7e6c840ee
-timeCreated: 1478139421
+timeCreated: 1478235343
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -58,7 +58,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Wetness
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0.719
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -84,8 +84,8 @@ SubstanceImporter:
           name: _BumpMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 22, y: 3}
-          offset: {x: 0, y: 0}
+          scale: {x: 22, y: 3.6}
+          offset: {x: 0, y: 0.07}
       - first:
           name: _DetailAlbedoMap
         second:
@@ -120,8 +120,8 @@ SubstanceImporter:
           name: _MetallicGlossMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 22, y: 3}
-          offset: {x: 0, y: 0}
+          scale: {x: 22, y: 3.6}
+          offset: {x: 0, y: 0.07}
       - first:
           name: _OcclusionMap
         second:
@@ -212,6 +212,18 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     - name: Centrifuge_Floor_metallic (Clone) (Clone) (Clone) (Clone)
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_basecolor (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
+        (Clone)
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_metallic (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
+        (Clone)
       alphaSource: 7
       filterMode: 1
       aniso: 1

@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class Centrifuge : MonoBehaviour {
 
 	public Vector3 eulerAngleVelocity;
-    Rigidbody rb;
     public List<GameObject> objects;
     public float gravitationalPull;
     bool onGround;
@@ -16,12 +15,10 @@ public class Centrifuge : MonoBehaviour {
  
 
     void Start() {
-        rb = GetComponent<Rigidbody>();
         mesh = GetComponent<MeshFilter>().mesh;
         vertices = mesh.vertices;
         uvs = new Vector2[vertices.Length];
         bounds = mesh.bounds;
-        Debug.Log(bounds);
     }
 
     void FixedUpdate() {
@@ -36,14 +33,13 @@ public class Centrifuge : MonoBehaviour {
 
         foreach (GameObject o in UnityEngine.Object.FindObjectsOfType<GameObject>()) {
             if(o.GetComponent<Rigidbody>()){
-                Debug.DrawLine (this.transform.position, this.transform.position - o.transform.position, Color.cyan);
 
                 var objVector = (this.transform.position - o.transform.position);
                 var objDist = objVector.magnitude;
                 var gravDist = (bounds.extents.x * transform.localScale.x);
                 var powerOfGravity = gravitationalPull * (objDist / gravDist);
 
-                var force = objVector.normalized * powerOfGravity * o.GetComponent<Rigidbody>().mass;
+                var force = objVector.normalized * powerOfGravity;
                     force.x = 0;
 
                 // Debug.Log("objDist " + objDist);

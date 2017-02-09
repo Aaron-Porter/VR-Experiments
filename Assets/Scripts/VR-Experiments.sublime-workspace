@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"averagedBody",
+				"averagedBodyPos"
+			],
+			[
 				"done",
 				"doneTeleporting"
 			],
@@ -84,7 +88,7 @@
 			"file": "/D/VR Experiments/Assets/Objects/Teleporter/TeleporterProjector.shader",
 			"settings":
 			{
-				"buffer_size": 1463,
+				"buffer_size": 1458,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -107,10 +111,21 @@
 			}
 		},
 		{
+			"contents": "using UnityEngine;\nusing System.Collections;\nusing System.Collections.Generic;\n\npublic class stickToGround : MonoBehaviour {\n\n\tGameObject head;\n\tGameObject playspace;\n\tfloat headHeight;\n\tRaycastHit hit;\n\tVector3 targetLocation;\n\n\n\n\tvoid Awake(){\n\t\thead = GameObject.Find(\"Camera (eye)\");\n\t\tplayspace = GameObject.Find(\"[CameraRig]\");\n\t}\n\n\tvoid FixedUpdate(){\n\n\t\tvar rayPosition = head.transform.position;\n\t\t\trayPosition = rayPosition + (-playspace.transform.up * 30);\n\n\t\tRaycastHit[] hits;\n        hits = Physics.RaycastAll(rayPosition, playspace.transform.up, 100.0F);\n\n        for (int i = 0; i < hits.Length; i++) {\n            RaycastHit hit = hits[i];\n\n\t\t\tif(hit.collider.gameObject.name == \"walkingPath\"){\n\n\t\t\t\tDebug.DrawLine(rayPosition, hit.point, Color.cyan);\n\t\t\t\t\n\t\t\t\tvar normal = hit.normal;\n\n\t\t\t\t// Debug.Log(normal);\n\t\t\t\trotatePlayspace(normal);\n\n\n\t\t\t}\n\t\t\t\n\n\t\t}\n\n\t}\n\n\tpublic void rotatePlayspace(Vector3 normal){\n\t\tnormal.y = -normal.y;\n\t\tnormal.x = -normal.x;\n\t\tnormal.z = -normal.z;\n\n\t\tplayspace.transform.up = normal;\n\t\t// var targetRotation = Quaternion.FromToRotation(playspace.transform.up, normal) * playspace.transform.rotation;\n\t //    playspace.transform.rotation = targetRotation;\n\t}\n\n\n}",
 			"file": "stickToGround.cs",
+			"file_size": 1267,
+			"file_write_time": 131226984417067588,
 			"settings":
 			{
-				"buffer_size": 1209,
+				"buffer_size": 1211,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Centrifuge.cs",
+			"settings":
+			{
+				"buffer_size": 1717,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -212,7 +227,7 @@
 	],
 	"find":
 	{
-		"height": 101.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -226,6 +241,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rb",
+			"mesh",
+			"Mesh",
+			"mesh",
+			"Length + 1",
+			"averagedBody[i]",
+			"y",
+			"head",
 			"Color",
 			"shadow",
 			"badguy",
@@ -313,7 +336,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -329,8 +352,8 @@
 						"selection":
 						[
 							[
-								3268,
-								3268
+								569,
+								569
 							]
 						],
 						"settings":
@@ -338,10 +361,10 @@
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3057.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -350,15 +373,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1463,
+						"buffer_size": 1458,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								142,
-								142
+								1418,
+								1418
 							]
 						],
 						"settings":
@@ -370,7 +393,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -399,7 +422,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -424,10 +447,10 @@
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 58.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -436,21 +459,49 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1209,
+						"buffer_size": 1211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								284,
-								272
+								869,
+								869
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Centrifuge.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1717,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1587,
+								1587
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -464,7 +515,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 39.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -501,7 +552,7 @@
 	"project": "VR-Experiments.sublime-project",
 	"replace":
 	{
-		"height": 74.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":

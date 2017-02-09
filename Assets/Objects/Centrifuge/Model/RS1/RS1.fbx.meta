@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: c8e2992ae4060094d9796520d7e602b9
+timeCreated: 1486541547
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: RS1
+    100004: RS1_1
+    100006: RS1_Capsule_01
+    100008: RS1_Capsule_01_2
+    100010: RS1_Capsule_01_3
+    100012: RS1_Capsule_01_Blanket
+    100014: RS1_Capsule_01_Blanket_2
+    100016: RS1_Capsule_01_Bottom
+    100018: RS1_Capsule_01_Bottom_2
+    100020: RS1_Capsule_01_Buttons
+    100022: RS1_Capsule_01_Buttons_2
+    100024: RS1_Capsule_01_Glass
+    100026: RS1_Capsule_01_Glass_2
+    100028: RS1_Capsule_01_Panel
+    100030: RS1_Capsule_01_Panel_2
+    100032: RS1_Capsule_01_Pillow
+    100034: RS1_Capsule_01_Pillow_2
+    100036: RS1_Capsule_01_Screen
+    100038: RS1_Capsule_01_Screen_2
+    100040: RS1_Capsule_02
+    100042: RS1_Monitor_01
+    100044: RS1_Monitor_01_Monitor
+    100046: RS1_Monitor_01_Panel
+    100048: RS1_Monitor_01_Screen
+    100050: RS1_Monitor_02
+    100052: RS1_Monitor_02_Monitor
+    100054: RS1_Monitor_02_Panel
+    100056: RS1_Monitor_02_Screen
+    400000: RS1
+    400002: //RootNode
+    400004: RS1_1
+    400006: RS1_Capsule_01
+    400008: RS1_Capsule_01_2
+    400010: RS1_Capsule_01_3
+    400012: RS1_Capsule_01_Blanket
+    400014: RS1_Capsule_01_Blanket_2
+    400016: RS1_Capsule_01_Bottom
+    400018: RS1_Capsule_01_Bottom_2
+    400020: RS1_Capsule_01_Buttons
+    400022: RS1_Capsule_01_Buttons_2
+    400024: RS1_Capsule_01_Glass
+    400026: RS1_Capsule_01_Glass_2
+    400028: RS1_Capsule_01_Panel
+    400030: RS1_Capsule_01_Panel_2
+    400032: RS1_Capsule_01_Pillow
+    400034: RS1_Capsule_01_Pillow_2
+    400036: RS1_Capsule_01_Screen
+    400038: RS1_Capsule_01_Screen_2
+    400040: RS1_Capsule_02
+    400042: RS1_Monitor_01
+    400044: RS1_Monitor_01_Monitor
+    400046: RS1_Monitor_01_Panel
+    400048: RS1_Monitor_01_Screen
+    400050: RS1_Monitor_02
+    400052: RS1_Monitor_02_Monitor
+    400054: RS1_Monitor_02_Panel
+    400056: RS1_Monitor_02_Screen
+    2300000: RS1_1
+    2300002: RS1_Capsule_01_2
+    2300004: RS1_Capsule_01_3
+    2300006: RS1_Capsule_01_Blanket
+    2300008: RS1_Capsule_01_Blanket_2
+    2300010: RS1_Capsule_01_Bottom
+    2300012: RS1_Capsule_01_Bottom_2
+    2300014: RS1_Capsule_01_Buttons
+    2300016: RS1_Capsule_01_Buttons_2
+    2300018: RS1_Capsule_01_Glass
+    2300020: RS1_Capsule_01_Glass_2
+    2300022: RS1_Capsule_01_Panel
+    2300024: RS1_Capsule_01_Panel_2
+    2300026: RS1_Capsule_01_Pillow
+    2300028: RS1_Capsule_01_Pillow_2
+    2300030: RS1_Capsule_01_Screen
+    2300032: RS1_Capsule_01_Screen_2
+    2300034: RS1_Monitor_01
+    2300036: RS1_Monitor_01_Monitor
+    2300038: RS1_Monitor_01_Panel
+    2300040: RS1_Monitor_01_Screen
+    2300042: RS1_Monitor_02
+    2300044: RS1_Monitor_02_Monitor
+    2300046: RS1_Monitor_02_Panel
+    2300048: RS1_Monitor_02_Screen
+    3300000: RS1_1
+    3300002: RS1_Capsule_01_2
+    3300004: RS1_Capsule_01_3
+    3300006: RS1_Capsule_01_Blanket
+    3300008: RS1_Capsule_01_Blanket_2
+    3300010: RS1_Capsule_01_Bottom
+    3300012: RS1_Capsule_01_Bottom_2
+    3300014: RS1_Capsule_01_Buttons
+    3300016: RS1_Capsule_01_Buttons_2
+    3300018: RS1_Capsule_01_Glass
+    3300020: RS1_Capsule_01_Glass_2
+    3300022: RS1_Capsule_01_Panel
+    3300024: RS1_Capsule_01_Panel_2
+    3300026: RS1_Capsule_01_Pillow
+    3300028: RS1_Capsule_01_Pillow_2
+    3300030: RS1_Capsule_01_Screen
+    3300032: RS1_Capsule_01_Screen_2
+    3300034: RS1_Monitor_01
+    3300036: RS1_Monitor_01_Monitor
+    3300038: RS1_Monitor_01_Panel
+    3300040: RS1_Monitor_01_Screen
+    3300042: RS1_Monitor_02
+    3300044: RS1_Monitor_02_Monitor
+    3300046: RS1_Monitor_02_Panel
+    3300048: RS1_Monitor_02_Screen
+    4300000: RS1_1
+    4300002: RS1_Monitor_01
+    4300004: RS1_Monitor_01_Panel
+    4300006: RS1_Monitor_01_Monitor
+    4300008: RS1_Monitor_01_Screen
+    4300010: RS1_Monitor_02
+    4300012: RS1_Monitor_02_Panel
+    4300014: RS1_Monitor_02_Monitor
+    4300016: RS1_Monitor_02_Screen
+    4300018: RS1_Capsule_01_2
+    4300020: RS1_Capsule_01_Panel
+    4300022: RS1_Capsule_01_Buttons
+    4300024: RS1_Capsule_01_Screen
+    4300026: RS1_Capsule_01_Blanket
+    4300028: RS1_Capsule_01_Pillow
+    4300030: RS1_Capsule_01_Bottom
+    4300032: RS1_Capsule_01_Glass
+    4300034: RS1_Capsule_01_3
+    4300036: RS1_Capsule_01_Panel_2
+    4300038: RS1_Capsule_01_Buttons_2
+    4300040: RS1_Capsule_01_Screen_2
+    4300042: RS1_Capsule_01_Blanket_2
+    4300044: RS1_Capsule_01_Pillow_2
+    4300046: RS1_Capsule_01_Bottom_2
+    4300048: RS1_Capsule_01_Glass_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

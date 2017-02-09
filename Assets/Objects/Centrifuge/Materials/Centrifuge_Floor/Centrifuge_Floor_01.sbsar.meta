@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5a3561b903c814743be708d7e6c840ee
-timeCreated: 1478235343
+timeCreated: 1486547308
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -85,7 +85,7 @@ SubstanceImporter:
         second:
           texture: {instanceID: 0}
           scale: {x: 22, y: 3.6}
-          offset: {x: 0, y: 0.07}
+          offset: {x: 0, y: 0}
       - first:
           name: _DetailAlbedoMap
         second:
@@ -121,7 +121,7 @@ SubstanceImporter:
         second:
           texture: {instanceID: 0}
           scale: {x: 22, y: 3.6}
-          offset: {x: 0, y: 0.07}
+          offset: {x: 0, y: 0}
       - first:
           name: _OcclusionMap
         second:
@@ -137,7 +137,7 @@ SubstanceImporter:
       floats:
       - first:
           name: _BumpScale
-        second: 1
+        second: 2
       - first:
           name: _Cutoff
         second: 0.5
@@ -186,7 +186,7 @@ SubstanceImporter:
       colors:
       - first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0.7766003, g: 0.78107023, b: 0.7941176, a: 1}
       - first:
           name: _EmissionColor
         second: {r: 0, g: 0, b: 0, a: 1}
@@ -228,6 +228,16 @@ SubstanceImporter:
       filterMode: 1
       aniso: 1
       wrapMode: 0
+    - name: Centrifuge_Floor_basecolor (Clone)
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_metallic (Clone)
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
     textureAssignments:
     - shaderProp:
         name: _MainTex
@@ -241,6 +251,10 @@ SubstanceImporter:
         name: _MetallicGlossMap
       material: {instanceID: 0}
       baseUID: 4133205131
+    - shaderProp:
+        name: _OcclusionMap
+      material: {instanceID: 0}
+      baseUID: 4133205133
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 

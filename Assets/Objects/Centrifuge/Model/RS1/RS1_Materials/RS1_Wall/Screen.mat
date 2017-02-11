@@ -46,6 +46,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _FalloffTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _MainTex
       second:
         m_Texture: {fileID: 0}
@@ -65,6 +71,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     - first:
         name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ShadowTex
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -93,7 +105,7 @@ Material:
       second: 1
     - first:
         name: _Metallic
-      second: 0.752
+      second: 0
     - first:
         name: _Mode
       second: 0
@@ -124,4 +136,4 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0.24080883, g: 0.6344068, b: 0.9632353, a: 1}
+      second: {r: 0.08823526, g: 0.58498996, b: 1, a: 1}

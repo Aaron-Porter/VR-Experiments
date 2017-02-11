@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5a3561b903c814743be708d7e6c840ee
-timeCreated: 1486547308
+timeCreated: 1486708070
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -30,14 +30,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Grime
       value:
-        scalar[0]: 1
+        scalar[0]: 0.9
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Scratches
       value:
-        scalar[0]: 0
+        scalar[0]: 0.658
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -58,7 +58,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Wetness
       value:
-        scalar[0]: 0.719
+        scalar[0]: 0.1
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -137,7 +137,7 @@ SubstanceImporter:
       floats:
       - first:
           name: _BumpScale
-        second: 2
+        second: 1
       - first:
           name: _Cutoff
         second: 0.5
@@ -186,7 +186,7 @@ SubstanceImporter:
       colors:
       - first:
           name: _Color
-        second: {r: 0.7766003, g: 0.78107023, b: 0.7941176, a: 1}
+        second: {r: 0.8897059, g: 0.8897059, b: 0.8897059, a: 1}
       - first:
           name: _EmissionColor
         second: {r: 0, g: 0, b: 0, a: 1}
@@ -260,6 +260,12 @@ SubstanceImporter:
       buildTarget: 
       textureWidth: 512
       textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+    - serializedVersion: 2
+      buildTarget: Standalone
+      textureWidth: 2048
+      textureHeight: 2048
       textureFormat: 0
       loadingBehavior: 1
   deletedPrototypes: []

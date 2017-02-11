@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 9b62e0e8f8b05824c9208fc58c449607
-timeCreated: 1486541716
+guid: f34fca6bf81e68442b741035d8bcbc9a
+timeCreated: 1486694638
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -9,7 +9,7 @@ TextureImporter:
     mipMapMode: 0
     enableMipMap: 1
     linearTexture: 0
-    correctGamma: 0
+    correctGamma: 1
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -47,11 +47,11 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 5
   buildTargetSettings:
   - buildTarget: Standalone
     maxTextureSize: 4096
-    textureFormat: -1
+    textureFormat: 10
     compressionQuality: 50
     allowsAlphaSplitting: 0
   spriteSheet:

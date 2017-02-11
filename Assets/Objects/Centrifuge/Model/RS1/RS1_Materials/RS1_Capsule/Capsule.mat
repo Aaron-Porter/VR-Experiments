@@ -18,7 +18,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: 8c6994b6ccfe4f44bb57a463bb33741a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7d3a8ebffa727074ea84c62ea74526ee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -42,19 +42,19 @@ Material:
     - first:
         name: _EmissionMap
       second:
-        m_Texture: {fileID: 2800000, guid: 39fdc545a38e7bc4883440107d18df34, type: 3}
+        m_Texture: {fileID: 2800000, guid: 82988e76e55a35345a9cdf1d8a657493, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: d92e92de1fa82cc4f84edddcea146278, type: 3}
+        m_Texture: {fileID: 2800000, guid: c4264bdaddb1bdb4c92dabe845aab631, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: 9a38297538b9fac4c927c84bfb53ebf0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1ebe9ce8c9d9d4648ae206f9e9d3a37f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -65,6 +65,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     - first:
         name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -84,16 +90,16 @@ Material:
       second: 0
     - first:
         name: _GlossMapScale
-      second: 1
+      second: 0.5
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 1
     - first:
         name: _GlossyReflections
       second: 1
     - first:
         name: _Metallic
-      second: 0
+      second: 1
     - first:
         name: _Mode
       second: 0
@@ -125,3 +131,6 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}

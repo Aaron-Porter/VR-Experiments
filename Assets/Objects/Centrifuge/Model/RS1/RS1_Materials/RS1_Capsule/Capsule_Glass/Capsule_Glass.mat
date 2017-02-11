@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Capsule_Glass
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _METALLICGLOSSMAP _SPECGLOSSMAP
+  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _METALLICGLOSSMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 1
   m_CustomRenderQueue: 3000
   stringTagMap:
@@ -19,7 +19,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 545700351ec4659408820f5a60ca4ef9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -49,13 +49,13 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: af00d77917798e3448042700d6a0ef52, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0e71fd71ab3640a43a036608a389f441, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: a2960ffde020f27409e070d92fb2e00b, type: 3}
+        m_Texture: {fileID: 2800000, guid: db27018c62a23ed41822e83faf08f001, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -73,16 +73,19 @@ Material:
     - first:
         name: _SpecGlossMap
       second:
-        m_Texture: {fileID: 2800000, guid: a2960ffde020f27409e070d92fb2e00b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1e8a0b2a924633e428a60e9300c0011f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - first:
+        name: _BumpAmt
+      second: 0
     - first:
         name: _BumpScale
       second: 1
     - first:
         name: _Cutoff
-      second: 0.5
+      second: 0.244
     - first:
         name: _DetailNormalMapScale
       second: 1
@@ -115,7 +118,7 @@ Material:
       second: 1
     - first:
         name: _SmoothnessTextureChannel
-      second: 0
+      second: 1
     - first:
         name: _SpecularHighlights
       second: 1

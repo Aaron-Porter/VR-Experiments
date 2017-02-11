@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 0df0883b76f3abd439e40260b920bccc
+timeCreated: 1486703226
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: RS1_Capsule_01_Blanket
+    100002: RS1_Capsule_01_Bottom
+    100004: RS1_Capsule_01_Buttons
+    100006: RS1_Capsule_01_Glass
+    100008: RS1_Capsule_01_Panel
+    100010: RS1_Capsule_01_Pillow
+    100012: RS1_Capsule_01_Screen
+    100014: RS3
+    100016: RS3_1
+    100018: RS3_Box
+    100020: RS3_Capsule_01
+    100022: RS3_Capsule_01_2
+    100024: //RootNode
+    100026: RS3_Indents
+    100028: RS3_Monitor_01
+    100030: RS3_Monitor_01_Buttons
+    100032: RS3_Monitor_01_Monitor
+    100034: RS3_Monitor_01_Panel
+    100036: RS3_Monitor_01_Screen
+    400000: RS1_Capsule_01_Blanket
+    400002: RS1_Capsule_01_Bottom
+    400004: RS1_Capsule_01_Buttons
+    400006: RS1_Capsule_01_Glass
+    400008: RS1_Capsule_01_Panel
+    400010: RS1_Capsule_01_Pillow
+    400012: RS1_Capsule_01_Screen
+    400014: RS3
+    400016: RS3_1
+    400018: RS3_Box
+    400020: RS3_Capsule_01
+    400022: RS3_Capsule_01_2
+    400024: //RootNode
+    400026: RS3_Indents
+    400028: RS3_Monitor_01
+    400030: RS3_Monitor_01_Buttons
+    400032: RS3_Monitor_01_Monitor
+    400034: RS3_Monitor_01_Panel
+    400036: RS3_Monitor_01_Screen
+    2300000: RS1_Capsule_01_Blanket
+    2300002: RS1_Capsule_01_Bottom
+    2300004: RS1_Capsule_01_Buttons
+    2300006: RS1_Capsule_01_Glass
+    2300008: RS1_Capsule_01_Panel
+    2300010: RS1_Capsule_01_Pillow
+    2300012: RS1_Capsule_01_Screen
+    2300014: RS3_1
+    2300016: RS3_Box
+    2300018: RS3_Capsule_01_2
+    2300020: RS3_Indents
+    2300022: RS3_Monitor_01
+    2300024: RS3_Monitor_01_Buttons
+    2300026: RS3_Monitor_01_Monitor
+    2300028: RS3_Monitor_01_Panel
+    2300030: RS3_Monitor_01_Screen
+    3300000: RS1_Capsule_01_Blanket
+    3300002: RS1_Capsule_01_Bottom
+    3300004: RS1_Capsule_01_Buttons
+    3300006: RS1_Capsule_01_Glass
+    3300008: RS1_Capsule_01_Panel
+    3300010: RS1_Capsule_01_Pillow
+    3300012: RS1_Capsule_01_Screen
+    3300014: RS3_1
+    3300016: RS3_Box
+    3300018: RS3_Capsule_01_2
+    3300020: RS3_Indents
+    3300022: RS3_Monitor_01
+    3300024: RS3_Monitor_01_Buttons
+    3300026: RS3_Monitor_01_Monitor
+    3300028: RS3_Monitor_01_Panel
+    3300030: RS3_Monitor_01_Screen
+    4300000: RS3_1
+    4300002: RS3_Monitor_01
+    4300004: RS3_Monitor_01_Panel
+    4300006: RS3_Monitor_01_Buttons
+    4300008: RS3_Monitor_01_Monitor
+    4300010: RS3_Monitor_01_Screen
+    4300012: RS3_Box
+    4300014: RS3_Indents
+    4300016: RS3_Capsule_01_2
+    4300018: RS1_Capsule_01_Glass
+    4300020: RS1_Capsule_01_Panel
+    4300022: RS1_Capsule_01_Buttons
+    4300024: RS1_Capsule_01_Screen
+    4300026: RS1_Capsule_01_Blanket
+    4300028: RS1_Capsule_01_Pillow
+    4300030: RS1_Capsule_01_Bottom
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

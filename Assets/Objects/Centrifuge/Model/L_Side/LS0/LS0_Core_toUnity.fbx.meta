@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 2950ec808b251464fba3252e4709057f
+timeCreated: 1486836424
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: L_Core_Lights
+    100002: L_DualLights_Body
+    100004: L_DualLights_Lights
+    100006: L_Frame
+    100008: L_Lights_Frame
+    100010: L_Lights_Frame_Lights
+    100012: L_Vents
+    100014: //RootNode
+    100016: LS0_Wall
+    400000: L_Core_Lights
+    400002: L_DualLights_Body
+    400004: L_DualLights_Lights
+    400006: L_Frame
+    400008: L_Lights_Frame
+    400010: L_Lights_Frame_Lights
+    400012: L_Vents
+    400014: //RootNode
+    400016: LS0_Wall
+    2300000: L_Core_Lights
+    2300002: L_DualLights_Body
+    2300004: L_DualLights_Lights
+    2300006: L_Frame
+    2300008: L_Lights_Frame
+    2300010: L_Lights_Frame_Lights
+    2300012: L_Vents
+    2300014: LS0_Wall
+    3300000: L_Core_Lights
+    3300002: L_DualLights_Body
+    3300004: L_DualLights_Lights
+    3300006: L_Frame
+    3300008: L_Lights_Frame
+    3300010: L_Lights_Frame_Lights
+    3300012: L_Vents
+    3300014: LS0_Wall
+    4300000: LS0_Wall
+    4300002: L_Core_Lights
+    4300004: L_DualLights_Body
+    4300006: L_DualLights_Lights
+    4300008: L_Lights_Frame
+    4300010: L_Lights_Frame_Lights
+    4300012: L_Vents
+    4300014: L_Frame
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

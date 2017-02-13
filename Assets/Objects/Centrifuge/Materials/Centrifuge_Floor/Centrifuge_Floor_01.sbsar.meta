@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5a3561b903c814743be708d7e6c840ee
-timeCreated: 1486708070
+timeCreated: 1486951807
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -10,7 +10,7 @@ SubstanceImporter:
     prototypeName: Centrifuge_Floor
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
     renderQueue: -1
     lightmapFlags: 1
     inputs:
@@ -58,7 +58,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Wetness
       value:
-        scalar[0]: 0.1
+        scalar[0]: 0.5
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -170,7 +170,7 @@ SubstanceImporter:
         second: 0.02
       - first:
           name: _SmoothnessTextureChannel
-        second: 0
+        second: 1
       - first:
           name: _SpecularHighlights
         second: 1
@@ -234,6 +234,18 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     - name: Centrifuge_Floor_metallic (Clone)
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_basecolor (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
+        (Clone) (Clone)
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_metallic (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
+        (Clone) (Clone)
       alphaSource: 7
       filterMode: 1
       aniso: 1

@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 98648115f5e7994438f7441e29832695
+timeCreated: 1486950890
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: RS4_Details
+    100004: RS4_Dividers
+    100006: RS4_Left_Piano
+    100008: RS4_Piano_Monitor
+    100010: RS4_Piano_SideButtons
+    100012: RS4_Piano_TopKeys
+    100014: RS4_Piano_TopPanel
+    100016: RS4_Pillars
+    100018: RS4_Right_BottomButtons
+    100020: RS4_Right_CenterPanel
+    100022: RS4_Right_HalBody
+    100024: RS4_Right_HalEye
+    100026: RS4_Right_HalRing
+    100028: RS4_Right_Monitor
+    100030: RS4_Right_TopPanel
+    100032: RS4_Wall
+    400000: //RootNode
+    400002: RS4_Details
+    400004: RS4_Dividers
+    400006: RS4_Left_Piano
+    400008: RS4_Piano_Monitor
+    400010: RS4_Piano_SideButtons
+    400012: RS4_Piano_TopKeys
+    400014: RS4_Piano_TopPanel
+    400016: RS4_Pillars
+    400018: RS4_Right_BottomButtons
+    400020: RS4_Right_CenterPanel
+    400022: RS4_Right_HalBody
+    400024: RS4_Right_HalEye
+    400026: RS4_Right_HalRing
+    400028: RS4_Right_Monitor
+    400030: RS4_Right_TopPanel
+    400032: RS4_Wall
+    2300000: RS4_Dividers
+    2300002: RS4_Left_Piano
+    2300004: RS4_Piano_Monitor
+    2300006: RS4_Piano_SideButtons
+    2300008: RS4_Piano_TopKeys
+    2300010: RS4_Piano_TopPanel
+    2300012: RS4_Pillars
+    2300014: RS4_Right_BottomButtons
+    2300016: RS4_Right_CenterPanel
+    2300018: RS4_Right_HalBody
+    2300020: RS4_Right_HalEye
+    2300022: RS4_Right_HalRing
+    2300024: RS4_Right_Monitor
+    2300026: RS4_Right_TopPanel
+    2300028: RS4_Wall
+    3300000: RS4_Dividers
+    3300002: RS4_Left_Piano
+    3300004: RS4_Piano_Monitor
+    3300006: RS4_Piano_SideButtons
+    3300008: RS4_Piano_TopKeys
+    3300010: RS4_Piano_TopPanel
+    3300012: RS4_Pillars
+    3300014: RS4_Right_BottomButtons
+    3300016: RS4_Right_CenterPanel
+    3300018: RS4_Right_HalBody
+    3300020: RS4_Right_HalEye
+    3300022: RS4_Right_HalRing
+    3300024: RS4_Right_Monitor
+    3300026: RS4_Right_TopPanel
+    3300028: RS4_Wall
+    4300000: RS4_Wall
+    4300002: RS4_Pillars
+    4300004: RS4_Dividers
+    4300006: RS4_Left_Piano
+    4300008: RS4_Piano_Monitor
+    4300010: RS4_Piano_SideButtons
+    4300012: RS4_Piano_TopPanel
+    4300014: RS4_Piano_TopKeys
+    4300016: RS4_Right_CenterPanel
+    4300018: RS4_Right_TopPanel
+    4300020: RS4_Right_HalBody
+    4300022: RS4_Right_HalEye
+    4300024: RS4_Right_HalRing
+    4300026: RS4_Right_Monitor
+    4300028: RS4_Right_BottomButtons
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

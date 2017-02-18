@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 73c5ebff2f90e654aa9992c4399aba24
+timeCreated: 1487298708
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: LS4_Details
+    100004: LS4_Faucet_01
+    100006: LS4_Faucet_02
+    100008: LS4_Faucet_03
+    100010: LS4_Light
+    100012: LS4_LightSwitch
+    100014: LS4_Sink
+    100016: LS4_Soap
+    100018: LS4_Valve
+    100020: LS4_Valve_Handles
+    100022: LS4_Wall
+    100024: Mirror
+    400000: //RootNode
+    400002: LS4_Details
+    400004: LS4_Faucet_01
+    400006: LS4_Faucet_02
+    400008: LS4_Faucet_03
+    400010: LS4_Light
+    400012: LS4_LightSwitch
+    400014: LS4_Sink
+    400016: LS4_Soap
+    400018: LS4_Valve
+    400020: LS4_Valve_Handles
+    400022: LS4_Wall
+    400024: Mirror
+    2300000: LS4_Faucet_01
+    2300002: LS4_Faucet_02
+    2300004: LS4_Faucet_03
+    2300006: LS4_Light
+    2300008: LS4_LightSwitch
+    2300010: LS4_Sink
+    2300012: LS4_Soap
+    2300014: LS4_Valve
+    2300016: LS4_Valve_Handles
+    2300018: LS4_Wall
+    2300020: Mirror
+    3300000: LS4_Faucet_01
+    3300002: LS4_Faucet_02
+    3300004: LS4_Faucet_03
+    3300006: LS4_Light
+    3300008: LS4_LightSwitch
+    3300010: LS4_Sink
+    3300012: LS4_Soap
+    3300014: LS4_Valve
+    3300016: LS4_Valve_Handles
+    3300018: LS4_Wall
+    3300020: Mirror
+    4300000: LS4_Wall
+    4300002: Mirror
+    4300004: LS4_Light
+    4300006: LS4_LightSwitch
+    4300008: LS4_Sink
+    4300010: LS4_Soap
+    4300012: LS4_Faucet_01
+    4300014: LS4_Faucet_02
+    4300016: LS4_Faucet_03
+    4300018: LS4_Valve
+    4300020: LS4_Valve_Handles
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

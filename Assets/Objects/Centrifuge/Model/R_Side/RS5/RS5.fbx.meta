@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 1b8643a207688d44aba1a8e2810f1791
+timeCreated: 1487269515
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: L_Panel_Buttons
+    100002: //RootNode
+    100004: RS5
+    100006: RS5_Center_BottomMonitor
+    100008: RS5_Center_CenterPanel
+    100010: RS5_Center_Hal_Body
+    100012: RS5_Center_Hal_Eye
+    100014: RS5_Center_Hal_Ring
+    100016: RS5_Center_LeftPanel
+    100018: RS5_Center_Monitor_Screens
+    100020: RS5_Center_Monitors
+    100022: RS5_Center_RightPanel
+    100024: RS5_Details
+    100026: RS5_InsideDividers
+    100028: RS5_Left_Monitors
+    100030: RS5_Left_Monitors_Screens
+    100032: RS5_Lights
+    100034: RS5_OutsideDividers
+    100036: RS5_Right_Monitors
+    100038: RS5_Right_Monitors_Screens
+    100040: RS5_Wall
+    100042: Side_Panel_Buttons
+    400000: L_Panel_Buttons
+    400002: //RootNode
+    400004: RS5
+    400006: RS5_Center_BottomMonitor
+    400008: RS5_Center_CenterPanel
+    400010: RS5_Center_Hal_Body
+    400012: RS5_Center_Hal_Eye
+    400014: RS5_Center_Hal_Ring
+    400016: RS5_Center_LeftPanel
+    400018: RS5_Center_Monitor_Screens
+    400020: RS5_Center_Monitors
+    400022: RS5_Center_RightPanel
+    400024: RS5_Details
+    400026: RS5_InsideDividers
+    400028: RS5_Left_Monitors
+    400030: RS5_Left_Monitors_Screens
+    400032: RS5_Lights
+    400034: RS5_OutsideDividers
+    400036: RS5_Right_Monitors
+    400038: RS5_Right_Monitors_Screens
+    400040: RS5_Wall
+    400042: Side_Panel_Buttons
+    2300000: L_Panel_Buttons
+    2300002: RS5
+    2300004: RS5_Center_BottomMonitor
+    2300006: RS5_Center_CenterPanel
+    2300008: RS5_Center_Hal_Body
+    2300010: RS5_Center_Hal_Eye
+    2300012: RS5_Center_Hal_Ring
+    2300014: RS5_Center_LeftPanel
+    2300016: RS5_Center_Monitor_Screens
+    2300018: RS5_Center_Monitors
+    2300020: RS5_Center_RightPanel
+    2300022: RS5_InsideDividers
+    2300024: RS5_Left_Monitors
+    2300026: RS5_Left_Monitors_Screens
+    2300028: RS5_Lights
+    2300030: RS5_OutsideDividers
+    2300032: RS5_Right_Monitors
+    2300034: RS5_Right_Monitors_Screens
+    2300036: Side_Panel_Buttons
+    3300000: L_Panel_Buttons
+    3300002: RS5
+    3300004: RS5_Center_BottomMonitor
+    3300006: RS5_Center_CenterPanel
+    3300008: RS5_Center_Hal_Body
+    3300010: RS5_Center_Hal_Eye
+    3300012: RS5_Center_Hal_Ring
+    3300014: RS5_Center_LeftPanel
+    3300016: RS5_Center_Monitor_Screens
+    3300018: RS5_Center_Monitors
+    3300020: RS5_Center_RightPanel
+    3300022: RS5_InsideDividers
+    3300024: RS5_Left_Monitors
+    3300026: RS5_Left_Monitors_Screens
+    3300028: RS5_Lights
+    3300030: RS5_OutsideDividers
+    3300032: RS5_Right_Monitors
+    3300034: RS5_Right_Monitors_Screens
+    3300036: Side_Panel_Buttons
+    4300000: RS5
+    4300002: RS5_OutsideDividers
+    4300004: RS5_InsideDividers
+    4300006: RS5_Lights
+    4300008: RS5_Center_Monitors
+    4300010: RS5_Center_Monitor_Screens
+    4300012: RS5_Right_Monitors
+    4300014: RS5_Right_Monitors_Screens
+    4300016: RS5_Left_Monitors
+    4300018: RS5_Left_Monitors_Screens
+    4300020: RS5_Center_CenterPanel
+    4300022: RS5_Center_BottomMonitor
+    4300024: RS5_Center_LeftPanel
+    4300026: RS5_Center_RightPanel
+    4300028: RS5_Center_Hal_Body
+    4300030: RS5_Center_Hal_Ring
+    4300032: RS5_Center_Hal_Eye
+    4300034: Side_Panel_Buttons
+    4300036: L_Panel_Buttons
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

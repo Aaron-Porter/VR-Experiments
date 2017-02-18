@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: a71a9d61da60f7d4c90f47fa45bb64e1
+timeCreated: 1487280349
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cap_1
+    100002: Cap_1_2
+    100004: Cap_2
+    100006: Cap_2_2
+    100008: LS1_Capsule_01
+    100010: LS1_Capsule_01_Blanket
+    100012: LS1_Capsule_01_Bottom
+    100014: LS1_Capsule_01_Buttons
+    100016: LS1_Capsule_01_Glass
+    100018: LS1_Capsule_01_Panel
+    100020: LS1_Capsule_01_Pillow
+    100022: LS1_Capsule_01_Screen
+    100024: LS1_Monitor_01
+    100026: LS1_Monitor_01_Buttons
+    100028: LS1_Monitor_01_Frame
+    100030: LS1_Monitor_01_Monitor
+    100032: LS1_Monitor_01_Panel
+    100034: //RootNode
+    100036: LS1_Wall
+    100038: Rounding
+    100040: Screen
+    400000: Cap_1
+    400002: Cap_1_2
+    400004: Cap_2
+    400006: Cap_2_2
+    400008: LS1_Capsule_01
+    400010: LS1_Capsule_01_Blanket
+    400012: LS1_Capsule_01_Bottom
+    400014: LS1_Capsule_01_Buttons
+    400016: LS1_Capsule_01_Glass
+    400018: LS1_Capsule_01_Panel
+    400020: LS1_Capsule_01_Pillow
+    400022: LS1_Capsule_01_Screen
+    400024: LS1_Monitor_01
+    400026: LS1_Monitor_01_Buttons
+    400028: LS1_Monitor_01_Frame
+    400030: LS1_Monitor_01_Monitor
+    400032: LS1_Monitor_01_Panel
+    400034: //RootNode
+    400036: LS1_Wall
+    400038: Rounding
+    400040: Screen
+    2300000: Cap_1
+    2300002: Cap_1_2
+    2300004: Cap_2
+    2300006: Cap_2_2
+    2300008: LS1_Capsule_01
+    2300010: LS1_Capsule_01_Blanket
+    2300012: LS1_Capsule_01_Bottom
+    2300014: LS1_Capsule_01_Buttons
+    2300016: LS1_Capsule_01_Glass
+    2300018: LS1_Capsule_01_Panel
+    2300020: LS1_Capsule_01_Pillow
+    2300022: LS1_Capsule_01_Screen
+    2300024: LS1_Monitor_01
+    2300026: LS1_Monitor_01_Buttons
+    2300028: LS1_Monitor_01_Frame
+    2300030: LS1_Monitor_01_Monitor
+    2300032: LS1_Monitor_01_Panel
+    2300034: LS1_Wall
+    2300036: Rounding
+    2300038: Screen
+    3300000: Cap_1
+    3300002: Cap_1_2
+    3300004: Cap_2
+    3300006: Cap_2_2
+    3300008: LS1_Capsule_01
+    3300010: LS1_Capsule_01_Blanket
+    3300012: LS1_Capsule_01_Bottom
+    3300014: LS1_Capsule_01_Buttons
+    3300016: LS1_Capsule_01_Glass
+    3300018: LS1_Capsule_01_Panel
+    3300020: LS1_Capsule_01_Pillow
+    3300022: LS1_Capsule_01_Screen
+    3300024: LS1_Monitor_01
+    3300026: LS1_Monitor_01_Buttons
+    3300028: LS1_Monitor_01_Frame
+    3300030: LS1_Monitor_01_Monitor
+    3300032: LS1_Monitor_01_Panel
+    3300034: LS1_Wall
+    3300036: Rounding
+    3300038: Screen
+    4300000: LS1_Wall
+    4300002: LS1_Monitor_01
+    4300004: Rounding
+    4300006: Cap_1
+    4300008: Cap_2
+    4300010: LS1_Monitor_01_Frame
+    4300012: Cap_1_2
+    4300014: Cap_2_2
+    4300016: LS1_Monitor_01_Monitor
+    4300018: Screen
+    4300020: LS1_Monitor_01_Panel
+    4300022: LS1_Monitor_01_Buttons
+    4300024: LS1_Capsule_01
+    4300026: LS1_Capsule_01_Glass
+    4300028: LS1_Capsule_01_Panel
+    4300030: LS1_Capsule_01_Buttons
+    4300032: LS1_Capsule_01_Screen
+    4300034: LS1_Capsule_01_Blanket
+    4300036: LS1_Capsule_01_Pillow
+    4300038: LS1_Capsule_01_Bottom
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

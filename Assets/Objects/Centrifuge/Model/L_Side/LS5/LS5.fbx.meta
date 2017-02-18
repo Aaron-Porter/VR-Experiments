@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: ed0188c7d38815348a43427429ed3740
+timeCreated: 1487354715
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: LS5_Couch
+    100004: LS5_Couch_InnerPadding
+    100006: LS5_Couch_OuterPadding
+    100008: LS5_Couch_Pillows_2
+    100010: LS5_Couch_SeatPadding
+    100012: LS5_SideWall
+    100014: LS5_SideWall_Fill
+    100016: LS5_Table
+    100018: LS5_Table_Leg_01
+    100020: LS5_Table_Leg_02
+    100022: LS5_Table_Leg_03
+    100024: LS5_Wall
+    400000: //RootNode
+    400002: LS5_Couch
+    400004: LS5_Couch_InnerPadding
+    400006: LS5_Couch_OuterPadding
+    400008: LS5_Couch_Pillows_2
+    400010: LS5_Couch_SeatPadding
+    400012: LS5_SideWall
+    400014: LS5_SideWall_Fill
+    400016: LS5_Table
+    400018: LS5_Table_Leg_01
+    400020: LS5_Table_Leg_02
+    400022: LS5_Table_Leg_03
+    400024: LS5_Wall
+    2300000: LS5_Couch
+    2300002: LS5_Couch_InnerPadding
+    2300004: LS5_Couch_OuterPadding
+    2300006: LS5_Couch_Pillows_2
+    2300008: LS5_Couch_SeatPadding
+    2300010: LS5_SideWall
+    2300012: LS5_SideWall_Fill
+    2300014: LS5_Table
+    2300016: LS5_Table_Leg_01
+    2300018: LS5_Table_Leg_02
+    2300020: LS5_Table_Leg_03
+    2300022: LS5_Wall
+    3300000: LS5_Couch
+    3300002: LS5_Couch_InnerPadding
+    3300004: LS5_Couch_OuterPadding
+    3300006: LS5_Couch_Pillows_2
+    3300008: LS5_Couch_SeatPadding
+    3300010: LS5_SideWall
+    3300012: LS5_SideWall_Fill
+    3300014: LS5_Table
+    3300016: LS5_Table_Leg_01
+    3300018: LS5_Table_Leg_02
+    3300020: LS5_Table_Leg_03
+    3300022: LS5_Wall
+    4300000: LS5_Wall
+    4300002: LS5_SideWall
+    4300004: LS5_SideWall_Fill
+    4300006: LS5_Couch
+    4300008: LS5_Couch_Pillows_2
+    4300010: LS5_Couch_SeatPadding
+    4300012: LS5_Couch_InnerPadding
+    4300014: LS5_Couch_OuterPadding
+    4300016: LS5_Table
+    4300018: LS5_Table_Leg_01
+    4300020: LS5_Table_Leg_02
+    4300022: LS5_Table_Leg_03
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 574c2e181a06a634cada8e6254a84985
-timeCreated: 1478141851
+timeCreated: 1487821397
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -58,7 +58,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Wetness
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0

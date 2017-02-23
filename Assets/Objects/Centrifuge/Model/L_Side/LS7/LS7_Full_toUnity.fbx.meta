@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: d9183947c99ed1140969a98fdf47fd4f
+timeCreated: 1487653880
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Handles
+    100002: Lens
+    100004: Lens_Box
+    100006: LS7_CenterPanel
+    100008: LS7_Details
+    100010: //RootNode
+    100012: LS7_L_BottomPanel_01
+    100014: LS7_L_BottomPanel_02
+    100016: LS7_L_TopPanel_01
+    100018: LS7_POD
+    100020: LS7_POD_Back
+    100022: LS7_R_BottomPanel
+    100024: LS7_R_CenterPanel
+    100026: LS7_R_LeftPanel
+    100028: LS7_R_Monitor
+    100030: LS7_R_RightPanel
+    100032: LS7_Wall
+    100034: RS7_L_Monitor
+    100036: RS7_L_Monitor_Screen
+    100038: Scope
+    400000: Handles
+    400002: Lens
+    400004: Lens_Box
+    400006: LS7_CenterPanel
+    400008: LS7_Details
+    400010: //RootNode
+    400012: LS7_L_BottomPanel_01
+    400014: LS7_L_BottomPanel_02
+    400016: LS7_L_TopPanel_01
+    400018: LS7_POD
+    400020: LS7_POD_Back
+    400022: LS7_R_BottomPanel
+    400024: LS7_R_CenterPanel
+    400026: LS7_R_LeftPanel
+    400028: LS7_R_Monitor
+    400030: LS7_R_RightPanel
+    400032: LS7_Wall
+    400034: RS7_L_Monitor
+    400036: RS7_L_Monitor_Screen
+    400038: Scope
+    2300000: Handles
+    2300002: Lens
+    2300004: Lens_Box
+    2300006: LS7_CenterPanel
+    2300008: LS7_L_BottomPanel_01
+    2300010: LS7_L_BottomPanel_02
+    2300012: LS7_L_TopPanel_01
+    2300014: LS7_POD
+    2300016: LS7_POD_Back
+    2300018: LS7_R_BottomPanel
+    2300020: LS7_R_CenterPanel
+    2300022: LS7_R_LeftPanel
+    2300024: LS7_R_Monitor
+    2300026: LS7_R_RightPanel
+    2300028: LS7_Wall
+    2300030: RS7_L_Monitor
+    2300032: RS7_L_Monitor_Screen
+    2300034: Scope
+    3300000: Handles
+    3300002: Lens
+    3300004: Lens_Box
+    3300006: LS7_CenterPanel
+    3300008: LS7_L_BottomPanel_01
+    3300010: LS7_L_BottomPanel_02
+    3300012: LS7_L_TopPanel_01
+    3300014: LS7_POD
+    3300016: LS7_POD_Back
+    3300018: LS7_R_BottomPanel
+    3300020: LS7_R_CenterPanel
+    3300022: LS7_R_LeftPanel
+    3300024: LS7_R_Monitor
+    3300026: LS7_R_RightPanel
+    3300028: LS7_Wall
+    3300030: RS7_L_Monitor
+    3300032: RS7_L_Monitor_Screen
+    3300034: Scope
+    4300000: LS7_Wall
+    4300002: LS7_R_Monitor
+    4300004: LS7_R_CenterPanel
+    4300006: LS7_R_RightPanel
+    4300008: LS7_R_LeftPanel
+    4300010: LS7_R_BottomPanel
+    4300012: RS7_L_Monitor
+    4300014: RS7_L_Monitor_Screen
+    4300016: LS7_L_TopPanel_01
+    4300018: LS7_L_BottomPanel_01
+    4300020: LS7_L_BottomPanel_02
+    4300022: LS7_POD
+    4300024: Scope
+    4300026: Lens_Box
+    4300028: Lens
+    4300030: Handles
+    4300032: LS7_CenterPanel
+    4300034: LS7_POD_Back
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

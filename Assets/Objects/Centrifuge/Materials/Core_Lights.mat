@@ -9,7 +9,7 @@ Material:
   m_Name: Core_Lights
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
@@ -124,4 +124,4 @@ Material:
       second: {r: 0.7764706, g: 0.90588236, b: 1, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0.65882355, g: 0.84313726, b: 1, a: 1}
+      second: {r: 0.654902, g: 0.8392157, b: 1, a: 1}

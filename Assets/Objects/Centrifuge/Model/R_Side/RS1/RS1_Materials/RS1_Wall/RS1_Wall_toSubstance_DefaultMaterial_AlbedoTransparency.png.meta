@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5aad90bd3ca69b648b30f39f6d73178f
-timeCreated: 1486694635
+guid: ad644bdfd1ec9c74aa0db7c1de6d0a50
+timeCreated: 1487908437
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -51,7 +51,7 @@ TextureImporter:
   buildTargetSettings:
   - buildTarget: Standalone
     maxTextureSize: 4096
-    textureFormat: 10
+    textureFormat: 12
     compressionQuality: 50
     allowsAlphaSplitting: 0
   spriteSheet:

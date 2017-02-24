@@ -1,34 +1,36 @@
 fileFormatVersion: 2
-guid: cb0f5103f4feb524ea988f9445bef72f
-timeCreated: 1487270913
+guid: a93f1a83f98fd02439ba525c166cbdf0
+timeCreated: 1487905569
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: RS7_Details
-    100004: RS7_Faucet_01
-    100006: RS7_Faucet_02
-    100008: RS7_Faucet_03
-    100010: RS7_Light
-    100012: RS7_LightSwitch
-    100014: RS7_Sink
-    100016: RS7_Soap
-    100018: RS7_Valve
-    100020: RS7_ValveHandles
-    100022: RS7_Wall
-    400000: //RootNode
-    400002: RS7_Details
-    400004: RS7_Faucet_01
-    400006: RS7_Faucet_02
-    400008: RS7_Faucet_03
-    400010: RS7_Light
-    400012: RS7_LightSwitch
-    400014: RS7_Sink
-    400016: RS7_Soap
-    400018: RS7_Valve
-    400020: RS7_ValveHandles
-    400022: RS7_Wall
+    100000: RS7_Details
+    100002: RS7_Faucet_01
+    100004: RS7_Faucet_02
+    100006: RS7_Faucet_03
+    100008: RS7_Light
+    100010: RS7_LightSwitch
+    100012: RS7_Sink
+    100014: RS7_Soap
+    100016: RS7_Valve
+    100018: RS7_ValveHandles
+    100020: RS7_Wall
+    100022: RS7_Wall_Mirror
+    100024: //RootNode
+    400000: RS7_Details
+    400002: RS7_Faucet_01
+    400004: RS7_Faucet_02
+    400006: RS7_Faucet_03
+    400008: RS7_Light
+    400010: RS7_LightSwitch
+    400012: RS7_Sink
+    400014: RS7_Soap
+    400016: RS7_Valve
+    400018: RS7_ValveHandles
+    400020: RS7_Wall
+    400022: RS7_Wall_Mirror
+    400024: //RootNode
     2300000: RS7_Faucet_01
     2300002: RS7_Faucet_02
     2300004: RS7_Faucet_03
@@ -39,6 +41,7 @@ ModelImporter:
     2300014: RS7_Valve
     2300016: RS7_ValveHandles
     2300018: RS7_Wall
+    2300020: RS7_Wall_Mirror
     3300000: RS7_Faucet_01
     3300002: RS7_Faucet_02
     3300004: RS7_Faucet_03
@@ -49,6 +52,7 @@ ModelImporter:
     3300014: RS7_Valve
     3300016: RS7_ValveHandles
     3300018: RS7_Wall
+    3300020: RS7_Wall_Mirror
     4300000: RS7_Light
     4300002: RS7_LightSwitch
     4300004: RS7_Sink
@@ -59,6 +63,7 @@ ModelImporter:
     4300014: RS7_Valve
     4300016: RS7_ValveHandles
     4300018: RS7_Wall
+    4300020: RS7_Wall_Mirror
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +93,7 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

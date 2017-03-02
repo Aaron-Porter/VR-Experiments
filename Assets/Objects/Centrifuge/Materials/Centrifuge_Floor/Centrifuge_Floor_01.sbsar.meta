@@ -1,12 +1,12 @@
 fileFormatVersion: 2
 guid: 5a3561b903c814743be708d7e6c840ee
-timeCreated: 1487890996
+timeCreated: 1488346430
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 16
-    name: Centrifuge_Floor
+    name: Centrifuge_Floor_Use
     prototypeName: Centrifuge_Floor
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -84,7 +84,7 @@ SubstanceImporter:
           name: _BumpMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 23, y: 4.6}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - first:
           name: _DetailAlbedoMap
@@ -108,19 +108,19 @@ SubstanceImporter:
           name: _EmissionMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 23, y: 4.6}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - first:
           name: _MainTex
         second:
           texture: {instanceID: 0}
-          scale: {x: 23, y: 4.6}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - first:
           name: _MetallicGlossMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 23, y: 4.6}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - first:
           name: _OcclusionMap
@@ -191,61 +191,61 @@ SubstanceImporter:
           name: _EmissionColor
         second: {r: 0, g: 0, b: 0, a: 1}
     textureParameters:
-    - name: Centrifuge_Floor_basecolor
+    - name: Centrifuge_Floor_Use_basecolor
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Centrifuge_Floor_normal
+    - name: Centrifuge_Floor_Use_normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Centrifuge_Floor_metallic
+    - name: Centrifuge_Floor_Use_metallic
       alphaSource: 7
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Centrifuge_Floor_basecolor (Clone) (Clone) (Clone) (Clone)
+    - name: Centrifuge_Floor_Use_basecolor (Clone) (Clone) (Clone) (Clone)
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Centrifuge_Floor_metallic (Clone) (Clone) (Clone) (Clone)
+    - name: Centrifuge_Floor_Use_metallic (Clone) (Clone) (Clone) (Clone)
       alphaSource: 7
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Centrifuge_Floor_basecolor (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
-        (Clone)
-      alphaSource: 6
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Centrifuge_Floor_metallic (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
-        (Clone)
-      alphaSource: 7
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Centrifuge_Floor_basecolor (Clone)
-      alphaSource: 6
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Centrifuge_Floor_metallic (Clone)
-      alphaSource: 7
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Centrifuge_Floor_basecolor (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
+    - name: Centrifuge_Floor_Use_basecolor (Clone) (Clone) (Clone) (Clone) (Clone)
         (Clone) (Clone)
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: Centrifuge_Floor_metallic (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
+    - name: Centrifuge_Floor_Use_metallic (Clone) (Clone) (Clone) (Clone) (Clone)
         (Clone) (Clone)
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_Use_basecolor (Clone)
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_Use_metallic (Clone)
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_Use_basecolor (Clone) (Clone) (Clone) (Clone) (Clone)
+        (Clone) (Clone) (Clone)
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_Use_metallic (Clone) (Clone) (Clone) (Clone) (Clone)
+        (Clone) (Clone) (Clone)
       alphaSource: 7
       filterMode: 1
       aniso: 1

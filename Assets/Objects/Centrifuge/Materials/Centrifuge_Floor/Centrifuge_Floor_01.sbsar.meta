@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5a3561b903c814743be708d7e6c840ee
-timeCreated: 1488445492
+timeCreated: 1489467661
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -149,7 +149,7 @@ SubstanceImporter:
         second: 0
       - first:
           name: _GlossMapScale
-        second: 0.6
+        second: 1
       - first:
           name: _Glossiness
         second: 0.5
@@ -272,6 +272,16 @@ SubstanceImporter:
         (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
         (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone) (Clone)
         (Clone) (Clone) (Clone) (Clone) (Clone)
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_Use_basecolor (Clone) (Clone)
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Centrifuge_Floor_Use_metallic (Clone) (Clone)
       alphaSource: 7
       filterMode: 1
       aniso: 1
